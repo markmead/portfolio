@@ -1,14 +1,10 @@
-import styles from './layout.module.scss'
-
 import Navbar from '../navbar'
 
 export default function Layout({ children }) {
   return (
     <>
       <Navbar />
-      <main data-name='layout' className={styles.main}>
-        {children}
-      </main>
+      <main className='max-w-screen-lg px-4 py-8 mx-auto sm:py-12 md:py-16'>{children}</main>
     </>
   )
 }

@@ -1,5 +1,3 @@
-import styles from './about-card.module.scss'
-
 function AboutCard() {
   const about = [
     { title: 'Name', text: 'Mark Mead' },
@@ -10,20 +8,20 @@ function AboutCard() {
     { title: 'Current job', text: 'Web Developer at Digital Reflow' },
   ]
   return (
-    <div className={styles.wrapper}>
+    <div className='mt-5 overflow-hidden bg-white rounded-md shadow-xl sm:shadow-2xl md:rounded-lg md:mt-10'>
       <div className='px-4 py-5 sm:px-6'>
-        <dl className={styles.dlGrid}>
+        <dl className='grid grid-cols-1 row-gap-8 col-gap-4 sm:grid-cols-2'>
           {about.map((info) => {
             return (
               <div className='sm:col-span-1'>
-                <dt className={styles.title}>{info.title}</dt>
-                <dd className={styles.text}>{info.text}</dd>
+                <dt className='text-sm font-medium leading-5 text-gray-500'>{info.title}</dt>
+                <dd className='mt-1 text-sm leading-5 text-gray-900'>{info.text}</dd>
               </div>
             )
           })}
           <div className='sm:col-span-2'>
-            <dt className={styles.title}>Bio</dt>
-            <dd className={styles.text}>
+            <dt className='text-sm font-medium leading-5 text-gray-500'>Bio</dt>
+            <dd className='mt-1 text-sm leading-5 text-gray-900'>
               Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim incididunt cillum culpa consequat. Excepteur
               qui ipsum aliquip consequat sint. Sit id mollit nulla mollit nostrud in ea officia proident. Irure nostrud
               pariatur mollit ad adipisicing reprehenderit deserunt qui eu.

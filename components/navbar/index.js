@@ -1,20 +1,20 @@
-import styles from './navbar.module.scss'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import classNames from 'classnames/bind'
+import cn from 'classnames'
 
 export default function Navbar() {
   const router = useRouter()
-  const cn = classNames.bind(styles)
+  const linkClasses =
+    'inline-flex items-center px-2 py-3 text-sm font-medium leading-tight text-gray-900 transition duration-150 ease-in-out border-b-2 border-gray-50 focus:outline-none focus:border-gray-400'
 
   return (
     <>
-      <nav className={styles.nav}>
-        <div className={styles.container}>
+      <nav className='flex items-end justify-center border-b-2 border-gray-50'>
+        <div className='max-w-screen-xl px-4 mx-auto'>
           <Link href='/'>
             <a
-              className={cn(styles.link, {
-                linkActive: router.pathname === '/',
+              className={cn(linkClasses, {
+                'border-gray-900': router.pathname === '/',
               })}
               title='Home'
             >
@@ -23,8 +23,8 @@ export default function Navbar() {
           </Link>
           <Link href='/about'>
             <a
-              className={cn(styles.link, {
-                linkActive: router.pathname === '/about',
+              className={cn(linkClasses, {
+                'border-gray-900': router.pathname === '/about',
               })}
               title='About'
             >
@@ -33,8 +33,8 @@ export default function Navbar() {
           </Link>
           <Link href='/skills'>
             <a
-              className={cn(styles.link, {
-                linkActive: router.pathname === '/skills',
+              className={cn(linkClasses, {
+                'border-gray-900': router.pathname === '/skills',
               })}
               title='Skills'
             >
@@ -43,34 +43,6 @@ export default function Navbar() {
           </Link>
         </div>
       </nav>
-
-      <style jsx>{`
-        nav {
-          @apply hidden;
-        }
-
-        @screen sm {
-          nav {
-            @apply flex justify-center border-b-2 border-gray-50 items-end;
-          }
-        }
-
-        .container {
-          @apply max-w-screen-lg px-4 mx-auto;
-        }
-
-        .link {
-          @apply inline-flex items-center px-2 py-3 text-sm font-medium leading-tight text-gray-900 transition duration-150 ease-in-out border-b-2 border-gray-50;
-        }
-
-        .link:focus {
-          @apply outline-none border-indigo-700;
-        }
-
-        .linkActive {
-          @apply border-gray-900;
-        }
-      `}</style>
     </>
   )
 }
