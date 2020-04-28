@@ -1,0 +1,38 @@
+.wrapper {
+  @apply mt-5 overflow-hidden bg-white shadow-2xl;
+
+  @screen sm {
+    @apply rounded-lg mt-10;
+  }
+}
+
+/*
+  Tailwind currently throws an error when declaring
+  space-* and divide-* classes with @apply
+*/
+
+// .dl {
+//   @apply space-y-8;
+
+//   @screen sm {
+//     @apply space-y-0 divide-y divide-gray-200;
+//   }
+// }
+
+.contentGrid {
+  @screen sm {
+    @apply grid grid-cols-3 gap-4 px-6 py-5;
+  }
+}
+
+.title {
+  @apply text-sm font-medium leading-5 text-gray-500;
+}
+
+.text {
+  @apply mt-1 text-sm leading-5 text-gray-900;
+
+  @screen sm {
+    @apply mt-0 col-span-2;
+  }
+}

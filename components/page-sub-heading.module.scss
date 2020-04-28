@@ -1,0 +1,11 @@
+.text {
+  @apply mt-3 max-w-md mx-auto text-base text-gray-600 text-center;
+
+  @screen sm {
+    @apply text-lg;
+  }
+
+  @screen md {
+    @apply mt-5 text-xl max-w-3xl;
+  }
+}
