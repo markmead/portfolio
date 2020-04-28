@@ -9,6 +9,7 @@ export default function Home() {
     <>
       <Head>
         <title>Hello | Mark Mead - Web Developer, Essex</title>
+        <meta name='description' content='23 year old web developer specialising in Essex' />
       </Head>
 
       <Layout>

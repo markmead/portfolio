@@ -10,6 +10,7 @@ function About() {
     <>
       <Head>
         <title>About Me | Mark Mead - Web Developer, Essex</title>
+        <meta name='description' content='Find out a little more about me' />
       </Head>
 
       <Layout>
