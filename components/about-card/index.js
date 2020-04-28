@@ -1,3 +1,7 @@
+import Card from '../card'
+import DescriptionListDD from '../card/description-list-dd'
+import DescriptionListDT from '../card/description-list-dt'
+
 function AboutCard() {
   const about = [
     { title: 'Name', text: 'Mark Mead' },
@@ -7,29 +11,30 @@ function AboutCard() {
     { title: 'Email address', text: 'himarkmead@gmail.com' },
     { title: 'Current job', text: 'Web Developer at Digital Reflow' },
   ]
+
+  const bio = {
+    title: 'Bio',
+    text: 'Hello',
+  }
   return (
-    <div className='mt-5 overflow-hidden bg-white rounded-md shadow-xl sm:shadow-2xl md:rounded-lg md:mt-10'>
+    <Card>
       <div className='px-4 py-5 sm:px-6'>
         <dl className='grid grid-cols-1 row-gap-8 col-gap-4 sm:grid-cols-2'>
           {about.map((info) => {
             return (
-              <div className='sm:col-span-1'>
-                <dt className='text-sm font-medium leading-5 text-gray-500'>{info.title}</dt>
-                <dd className='mt-1 text-sm leading-5 text-gray-900'>{info.text}</dd>
+              <div className='sm:col-span-1' key={info.title}>
+                <DescriptionListDT text={info.title} />
+                <DescriptionListDD text={info.text} classNames='mt-1' />
               </div>
             )
           })}
           <div className='sm:col-span-2'>
-            <dt className='text-sm font-medium leading-5 text-gray-500'>Bio</dt>
-            <dd className='mt-1 text-sm leading-5 text-gray-900'>
-              Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim incididunt cillum culpa consequat. Excepteur
-              qui ipsum aliquip consequat sint. Sit id mollit nulla mollit nostrud in ea officia proident. Irure nostrud
-              pariatur mollit ad adipisicing reprehenderit deserunt qui eu.
-            </dd>
+            <DescriptionListDT text={bio.title} />
+            <DescriptionListDD text={bio.text} classNames='mt-1' />
           </div>
         </dl>
       </div>
-    </div>
+    </Card>
   )
 }
 
