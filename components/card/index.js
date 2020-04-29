@@ -1,6 +1,8 @@
-function Card({ children }) {
+import cn from 'classnames'
+
+function Card({ children, classNames }) {
   return (
-    <div className='mt-5 overflow-hidden bg-white rounded-md shadow-xl sm:shadow-2xl md:rounded-lg md:mt-10'>
+    <div className={cn('overflow-hidden bg-white rounded-md shadow-xl sm:shadow-2xl md:rounded-lg', classNames)}>
       {children}
     </div>
   )

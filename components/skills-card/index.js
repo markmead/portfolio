@@ -13,10 +13,11 @@ function SkillsCard() {
     { title: 'Static Site Generation', text: 'Next, Gatsby, Gridsome, Nuxt & Jekyll' },
     { title: 'CMS', text: 'Spina, Netlify, WordPress, Contentful & Forestry' },
     { title: 'CSS Frameworks', text: 'Tailwind, Zurb Foundation, Bootstrap, Skeleton & GOVUK Design System' },
+    { title: 'Tools', text: 'Schema Markup, Webpack, PostCSS, Babel' },
   ]
 
   return (
-    <Card>
+    <Card classNames='mt-5 sm:mt-10'>
       <div className='px-4 py-5 sm:p-0'>
         <dl className='space-y-8 sm:space-y-0 sm:divide-y sm:divide-gray-200'>
           {skills.map((skill) => {

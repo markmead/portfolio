@@ -7,6 +7,7 @@ export default function Navbar() {
         <NavLink path='/' title='Home' />
         <NavLink path='/about' title='About' />
         <NavLink path='/skills' title='Skills' />
+        <NavLink path='/portfolio' title='Portfolio' />
       </div>
     </nav>
   )

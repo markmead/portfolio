@@ -17,7 +17,7 @@ function AboutCard() {
     text: 'Hello',
   }
   return (
-    <Card>
+    <Card classNames='mt-5 sm:mt-10'>
       <div className='px-4 py-5 sm:px-6'>
         <dl className='grid grid-cols-1 row-gap-8 col-gap-4 sm:grid-cols-2'>
           {about.map((info) => {
