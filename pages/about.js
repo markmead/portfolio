@@ -15,7 +15,7 @@ function About() {
 
       <Layout>
         <PageHeading title="Here's a bit about me" />
-        <PageSubHeading title='A web developer that builds mobile first, performance driven websites' />
+        <PageSubHeading title='23 year old lead web developer from Essex' />
         <AboutCard />
       </Layout>
     </>
