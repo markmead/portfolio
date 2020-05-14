@@ -5,15 +5,17 @@ import DescriptionListDT from '../card/description-list-dt'
 function SkillsCard() {
   const skills = [
     { title: 'HTML5', text: 'Haml, Slim, Erb and Pug/Jade' },
-    { title: 'CSS', text: 'SCSS, SASS, Stylus' },
+    { title: 'CSS', text: 'SCSS, SASS & Stylus' },
     { title: 'JavaScript', text: 'jQuery, React, Vue, Stimulus & Alpine' },
     { title: 'Ruby', text: 'Ruby on Rails & RSpec' },
     { title: 'Hosting', text: 'Heroku, Netlify & Vercel' },
     { title: 'Database & Querying', text: 'Postgres, SQL & GraphQL' },
     { title: 'Static Site Generation', text: 'Next, Gatsby, Gridsome, Nuxt & Jekyll' },
+    { title: 'eCommerce', text: 'Soliuds & Shopify' },
     { title: 'CMS', text: 'Spina, Netlify, WordPress, Contentful & Forestry' },
-    { title: 'CSS Frameworks', text: 'Tailwind, Zurb Foundation, Bootstrap, Skeleton & GOVUK Design System' },
+    { title: 'CSS Frameworks', text: 'Tailwind, Zurb Foundation, Bootstrap & GOVUK Design System' },
     { title: 'Tools', text: 'Schema Markup, Webpack, PostCSS, Babel' },
+    { title: 'Other', text: 'Webflow & Adobe XD' },
   ]
 
   return (
