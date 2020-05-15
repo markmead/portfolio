@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Layout from '../components/layout'
 import PageHeading from '../components/page-heading'
 import PageSubHeading from '../components/page-sub-heading'
+import Social from '../components/social'
 
 export default function Home() {
   return (
@@ -15,6 +16,9 @@ export default function Home() {
       <Layout>
         <PageHeading title="👋 Hi I'm Mark" />
         <PageSubHeading title='A web developer that builds mobile first, performance driven websites' />
+        <div className='flex justify-center'>
+          <Social />
+        </div>
       </Layout>
     </>
   )
