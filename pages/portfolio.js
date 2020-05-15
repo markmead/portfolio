@@ -18,7 +18,7 @@ function Portfolio() {
       <Layout>
         <PageHeading title='Featured work' />
         <PageSubHeading title="Here's a collection of websites that I have built/worked on" />
-        <div className='mt-5 sm:grid sm:grid-cols-2 sm:gap-8 sm:mt-10'>
+        <div className='mt-5 space-y-5 sm:grid sm:grid-cols-2 sm:gap-8 sm:mt-10 sm:space-y-0'>
           {projects.map((project) => {
             return <PortfolioItem data={project} />
           })}

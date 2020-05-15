@@ -1,6 +1,6 @@
 function PortfolioItem({ data }) {
   return (
-    <div className='flex flex-col justify-between p-6 border border-gray-200 sm:rounded-md'>
+    <div className='flex flex-col justify-between p-6 bg-gray-50'>
       <div class='flex-1'>
         <h3 class='text-xl leading-7 font-semibold text-gray-900'>{data.brand}</h3>
         <p class='mt-3 text-base leading-6 text-gray-500'>{data.description}</p>
@@ -18,7 +18,7 @@ function PortfolioItem({ data }) {
           href={data.link}
           rel='noopener noreferrer'
           target='_blank'
-          class='px-4 py-3 inline-flex border-gray-200 border text-sm hover:border-blue-600 leading-5 rounded-md transition-all hover:shadow-lg duration-150 ease-in-out bg-gray-50'
+          class='px-4 py-3 inline-flex text-sm border border-gray-700 hover:border-blue-600 hover:bg-blue-600 hover:text-white leading-5'
         >
           View {data.brand} website
         </a>

@@ -5,17 +5,13 @@ import cn from 'classnames'
 
 function NavLink({ path, title }) {
   const router = useRouter()
-  const linkClasses =
-    'inline-flex items-center px-3 py-4 text-sm font-medium leading-tight text-gray-900 transition duration-150 ease-in-out border-b-2 border-gray-50 focus:outline-none focus:border-gray-400'
+  const linkClass =
+    'px-3 py-4 text-sm text-white leading-tight focus:outline-none focus:bg-gray-200 focus:text-black focus:underline hover:underline hover:bg-blue-600 active:bg-blue-600'
+  const isActive = router.pathname === path
 
   return (
     <Link href={path}>
-      <a
-        className={cn(linkClasses, {
-          'border-gray-900': router.pathname === path,
-        })}
-        title={title}
-      >
+      <a className={cn(linkClass, { 'underline bg-blue-600': isActive })} title={title}>
         {title}
       </a>
     </Link>

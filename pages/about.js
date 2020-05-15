@@ -5,6 +5,8 @@ import PageHeading from '../components/page-heading'
 import PageSubHeading from '../components/page-sub-heading'
 import AboutCard from '../components/about-card'
 
+import about from '../data/about'
+
 function About() {
   return (
     <>
@@ -16,7 +18,7 @@ function About() {
       <Layout>
         <PageHeading title="Here's a bit about me" />
         <PageSubHeading title='23 year old lead web developer from Essex' />
-        <AboutCard />
+        <AboutCard about={about} />
       </Layout>
     </>
   )

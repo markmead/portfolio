@@ -5,9 +5,13 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        mono: ['Inconsolata', ...defaultTheme.fontFamily.mono],
       },
     },
   },
-  variants: {},
+  variants: {
+    padding: ['responsive', 'first'],
+    backgroundColor: ['hover', 'focus', 'odd'],
+  },
   plugins: [require('@tailwindcss/ui')],
 }
