@@ -1,24 +1,24 @@
 function PortfolioItem({ data }) {
   return (
     <div className='flex flex-col justify-between p-6 bg-gray-50'>
-      <div class='flex-1'>
-        <h3 class='text-xl leading-7 font-semibold text-gray-900'>{data.brand}</h3>
-        <p class='mt-3 text-base leading-6 text-gray-500'>{data.description}</p>
-        <div class='mt-5'>
-          <p class='text-sm leading-5 font-medium text-gray-900'>Technology</p>
-          <div class='flex text-sm leading-5 text-gray-500 mt-1'>{data.technology.join(', ')}</div>
+      <div className='flex-1'>
+        <h3 className='text-xl font-semibold leading-7 text-gray-900'>{data.brand}</h3>
+        <p className='mt-3 text-base leading-6 text-gray-500'>{data.description}</p>
+        <div className='mt-5'>
+          <p className='text-sm font-medium leading-5 text-gray-900'>Technology</p>
+          <div className='flex mt-1 text-sm leading-5 text-gray-500'>{data.technology.join(', ')}</div>
         </div>
-        <div class='mt-5'>
-          <p class='text-sm leading-5 font-medium text-gray-900'>Features</p>
-          <div class='flex text-sm leading-5 text-gray-500 mt-1'>{data.features.join(', ')}</div>
+        <div className='mt-5'>
+          <p className='text-sm font-medium leading-5 text-gray-900'>Features</p>
+          <div className='flex mt-1 text-sm leading-5 text-gray-500'>{data.features.join(', ')}</div>
         </div>
       </div>
-      <span class='flex-shrink-0 inline-flex mt-5'>
+      <span className='inline-flex flex-shrink-0 mt-5'>
         <a
           href={data.link}
           rel='noopener noreferrer'
           target='_blank'
-          class='px-4 py-3 inline-flex text-sm border border-gray-700 hover:border-blue-600 hover:bg-blue-600 hover:text-white leading-5'
+          className='inline-flex px-4 py-3 text-sm leading-5 border border-gray-700 hover:border-blue-600 hover:bg-blue-600 hover:text-white'
         >
           View {data.brand} website
         </a>
