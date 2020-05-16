@@ -12,6 +12,7 @@ module.exports = {
   variants: {
     padding: ['responsive', 'first'],
     backgroundColor: ['hover', 'focus', 'odd'],
+    color: ['hover', 'focus', 'group-hover'],
   },
   plugins: [require('@tailwindcss/ui')],
 }
