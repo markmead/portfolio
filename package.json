@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "scripts": {
+    "dev": "gridsome develop",
+    "build": "gridsome build",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "gridsome": "^0.7.0",
+    "typeface-inconsolata": "^0.0.72"
+  },
+  "devDependencies": {
+    "@tailwindcss/ui": "^0.3.0",
+    "tailwindcss": "^1.4.6",
+    "typeface-archivo-black": "^0.0.72",
+    "typeface-source-sans-pro": "^1.1.5"
+  }
+}

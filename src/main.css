@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+  @apply text-white bg-blue-600;
+}
+
+::-moz-selection {
+  @apply text-white bg-blue-600;
+}
