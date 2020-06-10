@@ -5,7 +5,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        mono: ['Inconsolata', ...defaultTheme.fontFamily.sans],
+        sans: ['Red Hat Display', ...defaultTheme.fontFamily.sans],
+        serif: ['Vidaloka', ...defaultTheme.fontFamily.serif],
       },
     },
   },

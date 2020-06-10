@@ -1,25 +1,22 @@
 <template>
-  <div class="max-w-screen-lg px-4 py-8 mx-auto sm:py-12 md:py-16 font-mono">
-    <nav class="flex items-center bg-black justify-center">
-      <app-nav-link url="/" text="Home" />
-      <app-nav-link url="/about" text="About" />
-      <app-nav-link url="/skills" text="Skills" />
-      <app-nav-link url="/portfolio" text="Portfolio" />
-      <app-nav-link url="/blog" text="Blog" />
-    </nav>
+  <div class="px-4 sm:px-6 md:px-8">
+    <app-header />
 
-    <main class="pt-5 sm:pt-10">
+    <main class="py-10 sm:py-12 md:py-16 lg:py-20">
       <slot />
     </main>
+    <app-notice />
   </div>
 </template>
 
 <script>
-import NavLink from '~/components/NavLink'
+import Header from '~/components/Header'
+import Notice from '~/components/Notice'
 
 export default {
   components: {
-    'app-nav-link': NavLink,
-  },
+    'app-header': Header,
+    'app-notice': Notice
+  }
 }
 </script>
