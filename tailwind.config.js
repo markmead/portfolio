@@ -19,7 +19,6 @@ module.exports = {
     },
   },
   variants: {
-    translate: ['hover', 'group-hover'],
     opacity: ['hover', 'group-hover'],
   },
   plugins: [require('@tailwindcss/ui')],

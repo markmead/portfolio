@@ -1,9 +1,8 @@
 const tailwind = require('tailwindcss')
-
 const postcssPlugins = [tailwind()]
 
 module.exports = {
-  siteName: 'Gridsome',
+  siteName: 'Mark Mead',
   plugins: [],
   css: {
     loaderOptions: {

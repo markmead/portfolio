@@ -4,17 +4,40 @@
       <h1 class="text-6xl leading-none text-center font-display">Blog</h1>
     </div>
     <ul class="mt-8 -space-y-px">
-      <app-blog-index-link v-for="i in 10" :key="i" />
+      <app-blog-link
+        v-for="blog in $page.blogs.edges"
+        :key="blog.node.id"
+        :id="blog.node.id"
+        :path="blog.node.path"
+        :title="blog.node.title"
+        :teaser="blog.node.teaser"
+      />
     </ul>
   </Layout>
 </template>
 
+<page-query>
+  query {
+    blogs: allBlogs(sortBy: "createdAt") {
+      edges {
+        node {
+          id
+          title
+          teaser
+          createdAt
+          path
+        }
+      }
+    }
+  }
+</page-query>
+
 <script>
-import BlogIndexLink from '~/components/BlogIndexLink'
+import BlogLink from '~/components/BlogLink'
 
 export default {
   components: {
-    'app-blog-index-link': BlogIndexLink
-  }
+    'app-blog-link': BlogLink,
+  },
 }
 </script>

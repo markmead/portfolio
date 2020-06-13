@@ -1,0 +1,17 @@
+.markdown-content {
+  .markdown-body {
+    @apply text-lg font-bold text-white font-sans opacity-75;
+
+    @screen sm {
+      @apply text-xl;
+    }
+
+    a {
+      @apply underline text-yellow;
+
+      &:hover {
+        @apply no-underline;
+      }
+    }
+  }
+}

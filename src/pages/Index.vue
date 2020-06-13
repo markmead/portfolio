@@ -26,7 +26,7 @@ import NavLinkInBody from '~/components/NavLinkInBody'
 
 export default {
   components: {
-    'app-nav-link-in-body': NavLinkInBody
-  }
+    'app-nav-link-in-body': NavLinkInBody,
+  },
 }
 </script>
