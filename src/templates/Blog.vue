@@ -8,21 +8,14 @@
           <vue-simple-markdown :source="blog.body" />
         </div>
       </article>
-      <nav class="grid items-end grid-cols-2 gap-8 py-8">
-        <g-link class="block text-right group">
+      <div class="flex items-center justify-center py-8">
+        <g-link to="/blog" class="block text-center group">
           <g-image src="~/assets/arrow.svg" class="ml-auto" />
           <p class="text-xl font-bold leading-none lowercase opacity-75 font-display group-hover:opacity-100">
-            Prev
+            Back to blogs
           </p>
         </g-link>
-
-        <g-link class="block text-left group">
-          <g-image src="~/assets/arrow.svg" class="mr-auto transform rotate-180" />
-          <p class="text-xl font-bold leading-none lowercase opacity-75 font-display group-hover:opacity-100">
-            Next
-          </p>
-        </g-link>
-      </nav>
+      </div>
     </div>
   </Layout>
 </template>

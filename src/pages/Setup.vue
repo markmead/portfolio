@@ -17,7 +17,7 @@
               <li class="text-lg font-bold leading-tight opacity-75">Ruby Solograph</li>
               <li class="text-lg font-bold leading-tight opacity-75">Vetur</li>
               <li class="text-lg font-bold leading-tight opacity-75">Rufo</li>
-              <li class="text-lg font-bold leading-tight opacity-75">HTML Beautifier</li>
+              <li class="text-lg font-bold leading-tight opacity-75">Tailwind Intellisense</li>
             </ul>
           </dd>
         </div>
