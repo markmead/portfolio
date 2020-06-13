@@ -21,8 +21,8 @@
 </template>
 
 <script>
-import axios from 'axios'
-const blog = 'http://localhost:3000/blogs'
+// import axios from 'axios'
+// const blog = 'http://localhost:3000/blogs'
 
 export default {
   data() {
@@ -30,15 +30,15 @@ export default {
       blog: null,
     }
   },
-  async mounted() {
-    await axios
-      .get(`${blog}/${this.$context.id}`)
-      .then((res) => {
-        this.blog = res.data
-      })
-      .catch((error) => {
-        console.log(error)
-      })
-  },
+  // async mounted() {
+  //   await axios
+  //     .get(`${blog}/${this.$context.id}`)
+  //     .then((res) => {
+  //       this.blog = res.data
+  //     })
+  //     .catch((error) => {
+  //       console.log(error)
+  //     })
+  // },
 }
 </script>
