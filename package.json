@@ -12,8 +12,8 @@
     "vue-simple-markdown": "^1.1.4"
   },
   "devDependencies": {
-    "node-sass": "^4.14.1",
     "@tailwindcss/ui": "^0.3.0",
+    "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
     "tailwindcss": "^1.4.6",
     "typeface-red-hat-display": "^1.1.3"
