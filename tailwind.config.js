@@ -6,10 +6,21 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Red Hat Display', ...defaultTheme.fontFamily.sans],
-        serif: ['Vidaloka', ...defaultTheme.fontFamily.serif],
+        display: ['Grifter', ...defaultTheme.fontFamily.sans],
+      },
+      colors: {
+        black: '#191919',
+        white: '#EAEAEA',
+        yellow: '#F7D72E',
+        blue: '#1493E6',
+        pink: '#C9355D',
+        green: '#7FC935',
       },
     },
   },
-  variants: {},
+  variants: {
+    translate: ['hover', 'group-hover'],
+    opacity: ['hover', 'group-hover'],
+  },
   plugins: [require('@tailwindcss/ui')],
 }

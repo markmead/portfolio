@@ -2,10 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply text-white bg-black;
+}
+
 ::selection {
-  @apply text-white bg-blue-600;
+  @apply text-black bg-white;
 }
 
 ::-moz-selection {
-  @apply text-white bg-blue-600;
+  @apply text-black bg-white;
+}
+
+@font-face {
+  font-family: 'Grifter';
+  font-weight: bold;
+  src: url('./grifter.otf');
 }

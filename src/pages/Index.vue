@@ -1,37 +1,32 @@
 <template>
   <Layout>
-    <h1 class="font-serif text-3xl leading-tight sm:text-4xl md:text-5xl">Hello my name is Mark.</h1>
-    <div class="max-w-md">
-      <p
-        class="mt-8 text-lg"
-      >I am a 23 year old web developer from Essex, building websites in Ruby on Rails.</p>
+    <div class="max-w-screen-xl px-4 pt-12 mx-auto sm:pt-16 md:pt-20 sm:px-6">
+      <h1 class="text-6xl leading-none font-display">Mark Mead</h1>
+      <h2 class="text-5xl leading-tight opacity-75 font-display">a web developer powered by Rails</h2>
+      <div class="grid grid-cols-12 gap-8 mt-8">
+        <div class="col-span-4">
+          <g-image src="~/assets/man.jpg" class="w-full" />
+        </div>
+        <div class="col-span-8">
+          <nav class="space-y-6">
+            <app-nav-link-in-body path="/blog" text="Blog" />
+            <app-nav-link-in-body path="/work" text="Work" />
+            <app-nav-link-in-body path="/setup" text="Setup" />
+            <app-nav-link-in-body path="/resources" text="Resources" />
+            <app-nav-link-in-body path="/site-info" text="Site info" />
+          </nav>
+        </div>
+      </div>
     </div>
-    <hr class="w-40 my-10 border-t border-black" />
-    <ul class="space-y-4">
-      <li>
-        <a
-          href="https://github.com/markmead"
-          class="font-serif text-xl leading-none hover:underline"
-          rel="noopener noreferrer"
-          target="_blank"
-        >GitHub</a>
-      </li>
-      <li>
-        <a
-          href="https://codepen.io/markmead/pens/popular"
-          class="font-serif text-xl leading-none hover:underline"
-          rel="noopener noreferrer"
-          target="_blank"
-        >CodePen</a>
-      </li>
-      <li>
-        <a
-          href="https://twitter.com/itsmarkmead"
-          class="font-serif text-xl leading-none hover:underline"
-          rel="noopener noreferrer"
-          target="_blank"
-        >Twitter</a>
-      </li>
-    </ul>
   </Layout>
 </template>
+
+<script>
+import NavLinkInBody from '~/components/NavLinkInBody'
+
+export default {
+  components: {
+    'app-nav-link-in-body': NavLinkInBody
+  }
+}
+</script>
