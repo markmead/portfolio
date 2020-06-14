@@ -16,21 +16,23 @@
   </Layout>
 </template>
 
-// <page-query>
-//   query {
-//     blogs: allBlogs(sortBy: "createdAt") {
-//       edges {
-//         node {
-//           id
-//           title
-//           teaser
-//           createdAt
-//           path
-//         }
-//       }
-//     }
-//   }
-// </page-query>
+<!--
+<page-query>
+  query {
+    blogs: allBlogs(sortBy: "createdAt") {
+      edges {
+        node {
+          id
+          title
+          teaser
+          createdAt
+          path
+        }
+      }
+    }
+  }
+</page-query>
+-->
 
 <script>
 import BlogLink from '~/components/BlogLink'
