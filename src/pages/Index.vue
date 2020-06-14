@@ -1,10 +1,12 @@
 <template>
   <Layout>
-    <div class="max-w-screen-xl px-4 pt-12 mx-auto sm:pt-16 md:pt-20 sm:px-6">
-      <h1 class="text-6xl leading-none font-display">Mark Mead</h1>
-      <h2 class="text-5xl leading-tight opacity-75 font-display">a web developer powered by Rails</h2>
+    <div class="max-w-screen-xl px-4 pt-20 mx-auto sm:px-6">
+      <h1 class="text-4xl leading-none md:text-6xl font-display">Mark Mead</h1>
+      <h2
+        class="text-3xl leading-tight opacity-75 md:text-5xl font-display"
+      >a web developer powered by Rails</h2>
       <div class="grid grid-cols-12 gap-8 mt-8">
-        <div class="col-span-4">
+        <div class="col-span-6 lg:col-span-4">
           <figure>
             <g-image
               src="~/assets/images/me-at-work.jpg"
@@ -12,11 +14,11 @@
               alt="Working in the office"
             />
             <figcaption
-              class="mt-1 text-sm font-bold text-center opacity-75"
+              class="mt-1 text-xs font-bold text-center opacity-75 md:text-sm"
             >Myself (left) and Jordi (right) pairing on a project</figcaption>
           </figure>
         </div>
-        <div class="col-span-8">
+        <div class="col-span-6 lg:col-span-8">
           <nav class="space-y-6">
             <app-nav-link-in-body path="/blog" text="Blog" />
             <app-nav-link-in-body path="/work" text="Work" />

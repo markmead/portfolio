@@ -1,11 +1,11 @@
 <template>
   <Layout>
-    <div class="max-w-screen-xl px-4 pt-12 mx-auto sm:pt-16 md:pt-20 sm:px-6">
+    <div class="max-w-screen-xl px-4 pt-20 mx-auto sm:px-6">
       <article>
-        <h1 class="text-6xl leading-none font-display">{{ blog.title }}</h1>
+        <h1 class="text-4xl leading-none md:text-6xl font-display">{{ blog.title }}</h1>
         <time
           datetime
-          class="text-2xl leading-tight opacity-75 font-display"
+          class="text-xl leading-tight opacity-75 md:text-2xl font-display"
         >{{ blog.friendly_created_at }}</time>
         <div class="max-w-3xl mx-auto mt-8 markdown-content">
           <vue-simple-markdown :source="blog.body" />
