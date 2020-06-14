@@ -7,6 +7,7 @@
         <app-nav-link path="/blog" text="Blog" />
         <app-nav-link path="/work" text="Work" />
         <app-nav-link path="/setup" text="Setup" />
+        <app-nav-link path="/about" text="About" />
         <app-nav-link path="/resources" text="Resources" />
         <app-nav-link path="/site-info" text="Site info" />
       </nav>

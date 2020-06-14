@@ -4,7 +4,7 @@
       <h1 class="text-4xl leading-none md:text-6xl font-display">Mark Mead</h1>
       <h2
         class="text-3xl leading-tight opacity-75 md:text-5xl font-display"
-      >a web developer powered by Rails</h2>
+      >a web developer powered by Rails &amp; JavaScript</h2>
       <div class="grid grid-cols-12 gap-8 mt-8">
         <div class="col-span-6 lg:col-span-4">
           <figure>
@@ -23,6 +23,7 @@
             <app-nav-link-in-body path="/blog" text="Blog" />
             <app-nav-link-in-body path="/work" text="Work" />
             <app-nav-link-in-body path="/setup" text="Setup" />
+            <app-nav-link-in-body path="/about" text="About" />
             <app-nav-link-in-body path="/resources" text="Resources" />
             <app-nav-link-in-body path="/site-info" text="Site info" />
           </nav>

@@ -13,5 +13,13 @@
         @apply no-underline;
       }
     }
+
+    ul {
+      @apply list-disc;
+    }
+
+    ol {
+      @apply list-decimal;
+    }
   }
 }
