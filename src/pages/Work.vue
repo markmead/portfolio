@@ -14,7 +14,7 @@
 
 <script>
 import WorkLink from '~/components/WorkLink'
-import FilerButton from '~/components/FilterButton'
+import FilterButton from '~/components/FilterButton'
 
 export default {
   components: {
