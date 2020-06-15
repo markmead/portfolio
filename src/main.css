@@ -16,6 +16,8 @@ body {
 
 @font-face {
   font-family: 'Grifter';
+  font-style: normal;
   font-weight: bold;
   src: url('./grifter.otf');
+  font-display: swap;
 }

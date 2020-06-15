@@ -37,6 +37,17 @@
 import NavLinkInBody from '~/components/NavLinkInBody'
 
 export default {
+  metaInfo: {
+    title: '👋 Welcome',
+    meta: [
+      {
+        key: 'description',
+        name: 'description',
+        content:
+          "Hello, I'm Mark Mead. I'm a 23 year old web developer who has been building websites for 4 years. Working with Ruby on Rails, Javascript, Vue, React and more."
+      }
+    ]
+  },
   components: {
     'app-nav-link-in-body': NavLinkInBody
   }
