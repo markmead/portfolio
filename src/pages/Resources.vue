@@ -12,9 +12,10 @@
       <ul class="flex items-center justify-center max-w-4xl mx-auto mt-8 space-x-10">
         <app-filter-button v-for="i in 4" :key="i" />
       </ul>
-      <ul class="max-w-4xl mx-auto mt-8">
+      <div class="mt-8 text-xl font-bold text-center opacity-75">Projects coming soon</div>
+      <!-- <ul class="max-w-4xl mx-auto mt-8">
         <app-resource-link v-for="i in 10" :key="i" />
-      </ul>
+      </ul>-->
     </div>
   </Layout>
 </template>

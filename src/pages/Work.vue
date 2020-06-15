@@ -5,9 +5,10 @@
       <ul class="flex items-center justify-center max-w-4xl mx-auto mt-8 space-x-10">
         <app-filter-button v-for="i in 4" :key="i" />
       </ul>
-      <div class="grid grid-cols-2 gap-8 mt-8">
+      <div class="mt-8 text-xl font-bold text-center opacity-75">Projects coming soon</div>
+      <!-- <div class="grid grid-cols-2 gap-8 mt-8">
         <app-work-link v-for="i in 10" :key="i" />
-      </div>
+      </div>-->
     </div>
   </Layout>
 </template>
