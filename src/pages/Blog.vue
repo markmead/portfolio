@@ -27,7 +27,7 @@
         :url="blog.node.url"
         :title="blog.node.title"
         :description="blog.node.description"
-        :tags="blog.node.tags"
+        :tags="blog.node.tags.split(',')"
       />
     </ul>
   </Layout>
