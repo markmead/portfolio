@@ -35,6 +35,7 @@
 
 <script>
 import NavLinkInBody from '~/components/NavLinkInBody'
+import axios from 'axios'
 
 export default {
   metaInfo: {
@@ -50,6 +51,11 @@ export default {
   },
   components: {
     'app-nav-link-in-body': NavLinkInBody
+  },
+  beforeMount() {
+    axios
+      .get('https://dev.to/api/articles?username=markmead')
+      .then(res => console.log(res))
   }
 }
 </script>
