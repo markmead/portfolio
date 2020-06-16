@@ -87,4 +87,12 @@
   code {
     @apply bg-white text-black inline rounded-sm p-0.5 font-mono;
   }
+
+  a {
+    @apply underline text-green;
+
+    &:hover {
+      @apply no-underline;
+    }
+  }
 }

@@ -40,6 +40,12 @@
         <code>
           .inactive-hover-target { @apply opacity-25; }
         </code>
+        <p>
+          <small
+            >The <code>@apply</code> is from Tailwind, check it out here
+            <a href="https://tailwindcss.com/" target="_blank">TailwindCSS</a></small
+          >
+        </p>
       </div>
     </div>
   </Layout>
