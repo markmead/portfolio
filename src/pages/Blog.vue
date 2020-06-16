@@ -17,19 +17,7 @@
         :tags="blog.node.tags.split(',')"
       />
     </ul>
-    <div
-      class="fixed bottom-0 right-0 flex items-center p-4 text-black transform -translate-x-8 -translate-y-8 bg-white"
-    >
-      <span class="text-sm font-bold">Blog proudly powered by &nbsp;</span>
-      <a href="https://dev.to/markmead">
-        <img
-          src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
-          alt="Mark's DEV Profile"
-          height="30"
-          width="30"
-        />
-      </a>
-    </div>
+    <app-dev-to-badge />
   </Layout>
 </template>
 
@@ -52,10 +40,12 @@
 
 <script>
 import BlogLink from '~/components/BlogLink'
+import DevToBadge from '~/components/DevToBadge'
 
 export default {
   components: {
-    'app-blog-link': BlogLink
+    'app-blog-link': BlogLink,
+    'app-dev-to-badge': DevToBadge
   }
 }
 </script>
