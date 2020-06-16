@@ -83,4 +83,8 @@
   hr {
     @apply border-white opacity-50 my-6;
   }
+
+  code {
+    @apply bg-white text-black inline rounded-sm p-0.5 font-mono;
+  }
 }
