@@ -33,12 +33,12 @@
           <li><code>inactiveClass</code> &nbsp; which is the name of the class you want to use</li>
         </ul>
         <p>
-          <small>The <code>inactiveClass</code> option has a default of <code>inactive-group-target</code></small>
+          <small>The <code>inactiveClass</code> option has a default of <code>inactive-hover-target</code></small>
         </p>
         <hr />
         <h3>The CSS</h3>
         <code>
-          .inactive-group-target { @apply opacity-25; }
+          .inactive-hover-target { @apply opacity-25; }
         </code>
       </div>
     </div>
@@ -56,7 +56,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.inactive-group-target {
+.inactive-hover-target {
   @apply opacity-25;
 }
 </style>

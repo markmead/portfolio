@@ -5925,10 +5925,10 @@ napi-build-utils@^1.0.1:
   resolved "https://registry.yarnpkg.com/napi-build-utils/-/napi-build-utils-1.0.2.tgz#b1fddc0b2c46e380a0b7a76f984dd47c41a13806"
   integrity sha512-ONmRUqK7zj7DWX0D9ADe03wbwOBZxNAfF20PlGfCWQcD3+/MakShIHrMqx9YwPTfxDdF1zLeL+RGZiR9kGMLdg==
 
-negative-hover@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/negative-hover/-/negative-hover-1.0.2.tgz#9968630f5b2f430b00d72d2eec2cd01e9d970f1e"
-  integrity sha512-NK+ZxkqglLwnHqdZqGN/ekLEFvn1FtMKiTek6jRz0CrRUHtgzymqRbRshuYXQmrzxdKA81NL67hMU5+4TUGmsg==
+negative-hover@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/negative-hover/-/negative-hover-1.0.3.tgz#d027445f2ece439f42bf45fa32b830c2dd7f4dd9"
+  integrity sha512-gved+aYIQAdyvpbIMA0BWBQb7X5coZe5xX1QEwi3kiuI5a1MlC9QPNp8l/lEO1Vqc82XAkNz3qfUJhutU8YDxg==
 
 negotiator@0.6.2:
   version "0.6.2"
