@@ -7,7 +7,7 @@
         <div
           v-for="i in 12"
           :key="i"
-          class="w-full h-40 transition duration-150 ease-in-out bg-white"
+          class="w-full h-32 transition duration-150 ease-in-out bg-white"
           data-negative-hover-target="example"
         ></div>
       </div>
@@ -23,10 +23,10 @@
         </p>
         <hr />
         <h3>Import the JS</h3>
-        <code>import negativeHover from 'negative-hover'</code>
+        <code>import NegativeHover from 'negative-hover'</code>
         <hr />
         <h3>Pass in your options and init the JS</h3>
-        <code>new negativeHover({ name: 'example' }).init()</code>
+        <code>new NegativeHover({ name: 'example' }).init()</code>
         <p>The options are:</p>
         <ul>
           <li><code>name</code> &nbsp; which is the name you've added to to the data atrributes</li>
@@ -37,14 +37,15 @@
         </p>
         <hr />
         <h3>The CSS</h3>
+        <p>Pass in the CSS you want to apply to the inactive elements.</p>
         <code>
           .inactive-hover-target { @apply opacity-25; }
         </code>
         <p>
-          <small
-            >The <code>@apply</code> is from Tailwind, check it out here
-            <a href="https://tailwindcss.com/" target="_blank">TailwindCSS</a></small
-          >
+          <small>
+            This exampel uses Tailwind, check it out here 
+            <a href="https://tailwindcss.com/" target="_blank">TailwindCSS</a>
+          </small>
         </p>
       </div>
     </div>
@@ -52,11 +53,11 @@
 </template>
 
 <script>
-import negativeHover from 'negative-hover'
+import NegativeHover from 'negative-hover'
 
 export default {
   mounted() {
-    new negativeHover({ name: 'example' }).init()
+    new NegativeHover({ name: 'example' }).init()
   },
 }
 </script>
