@@ -1,8 +1,8 @@
-import '~/main.css'
-import '~/assets/css/content.scss'
-import 'typeface-red-hat-display'
+import '@/main.css'
+import 'typeface-vidaloka'
+import 'typeface-roboto'
 
-import DefaultLayout from '~/layouts/Default.vue'
+import DefaultLayout from '@/layouts/Default'
 
 export default function(Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout)

@@ -6,12 +6,13 @@ module.exports = {
     const collection = actions.addCollection('Blogs')
 
     for (const blog of blogs.data) {
+      const tags = blog.tags.split(', ')
+
       collection.addNode({
-        id: blog.id,
         title: blog.title,
         description: blog.description,
-        tags: blog.tags,
-        url: blog.url,
+        tags,
+        path: blog.url,
       })
     }
   },

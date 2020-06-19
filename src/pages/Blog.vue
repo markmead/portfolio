@@ -1,37 +1,28 @@
-<template>
-  <Layout>
-    <div class="max-w-screen-xl px-4 pt-20 mx-auto sm:px-6">
-      <h1 class="text-4xl leading-none text-center md:text-6xl font-display">Blog</h1>
-      <small
-        class="block mt-4 text-sm italic font-bold text-center opacity-75"
-      >I will add some toggles here so you can decide how the posts open/look</small>
-    </div>
-    <ul class="mt-8 -space-y-px">
-      <app-blog-link
-        v-for="blog in $page.blogs.edges"
-        :key="blog.node.id"
-        :id="blog.node.id"
-        :url="blog.node.url"
-        :title="blog.node.title"
-        :description="blog.node.description"
-        :tags="blog.node.tags.split(',')"
-      />
-    </ul>
-    <app-dev-to-badge />
-  </Layout>
-</template>
+<template lang="pug">
+  Layout
+    Spacer
+      Title(text="Sometimes I make posts on DEV.to")
+      Paragraph(:text="intro")
+      Break
+      Spacer(divide=true)
+        Blog(v-for="blog in $page.blogs.edges" :key="blog.node.path" 
+                                               :text="blog.node.title" 
+                                               :path="blog.node.path" 
+                                               :description="blog.node.description"
+                                               :tags="blog.node.tags")
 
+
+</template>
 
 <page-query>
   query {
     blogs: allBlogs(sortBy: "createdAt") {
       edges {
         node {
-          id
           title
           description
           tags
-          url
+          path
         }
       }
     }
@@ -39,13 +30,25 @@
 </page-query>
 
 <script>
-import BlogLink from '~/components/BlogLink'
-import DevToBadge from '~/components/DevToBadge'
+import Title from '@/components/Text/Title'
+import Paragraph from '@/components/Text/Paragraph'
+import Spacer from '@/components/Flow/Spacer'
+import Break from '@/components/Flow/Break'
+import Blog from '@/components/Blog'
 
 export default {
+  data() {
+    return {
+      intro:
+        "I'm not that much of a blogger, but when I do write I like to make posts about my experiences. I know when I started development that I took great interest in reading other peoples stories, learning how they overcome challenges and what the outcome was.",
+    }
+  },
   components: {
-    'app-blog-link': BlogLink,
-    'app-dev-to-badge': DevToBadge
-  }
+    Title,
+    Paragraph,
+    Spacer,
+    Break,
+    Blog,
+  },
 }
 </script>

@@ -1,56 +1,29 @@
-<template>
-  <Layout>
-    <div class="max-w-screen-xl px-4 pt-20 mx-auto sm:px-6">
-      <h1 class="text-4xl leading-none md:text-6xl font-display">Mark Mead</h1>
-      <h2 class="text-3xl leading-tight opacity-75 md:text-5xl font-display">
-        a web developer powered by Rails &amp; JavaScript
-      </h2>
-      <div class="grid grid-cols-12 gap-8 mt-8">
-        <div class="col-span-6 lg:col-span-4">
-          <figure>
-            <g-image src="~/assets/images/me-at-work.jpg" class="w-full" alt="Working in the office" />
-            <figcaption class="mt-1 text-xs font-bold text-center opacity-75 md:text-sm">
-              Myself (left) and Jordi (right) pairing on a project
-            </figcaption>
-          </figure>
-        </div>
-        <div class="col-span-6 lg:col-span-8">
-          <nav class="space-y-6">
-            <app-nav-link-in-body path="/blog" text="Blog" />
-            <app-nav-link-in-body path="/work" text="Work" />
-            <app-nav-link-in-body path="/setup" text="Setup" />
-            <app-nav-link-in-body path="/about" text="About" />
-            <app-nav-link-in-body path="/resources" text="Resources" />
-            <app-nav-link-in-body path="/site-info" text="Site info" />
-            <app-nav-link-in-body path="/negative-hover" text="Negative hover" />
-          </nav>
-        </div>
-      </div>
-    </div>
-  </Layout>
+<template lang="pug">
+Layout
+  Spacer
+    Title(text="Hello, I'm Mark Mead. I build websites with Ruby on Rails and JavaScript.")
+    Paragraph(:text="intro")
+    Button(path="/about" text="About me" classes="primary")
 </template>
 
 <script>
-import NavLinkInBody from '~/components/NavLinkInBody'
-import axios from 'axios'
+import Button from '@/components/UI/Button'
+import Title from '@/components/Text/Title'
+import Paragraph from '@/components/Text/Paragraph'
+import Spacer from '@/components/Flow/Spacer'
 
 export default {
-  metaInfo: {
-    title: '👋 Welcome',
-    meta: [
-      {
-        key: 'description',
-        name: 'description',
-        content:
-          "Hello, I'm Mark Mead. I'm a 23 year old web developer who has been building websites for 4 years. Working with Ruby on Rails, Javascript, Vue, React and more.",
-      },
-    ],
+  data() {
+    return {
+      intro:
+        "I've been building websites for 4 years, these have ranged from travel insurance quote engines, lead generation focused, geolocating services, forums, ecommerce and more. I'm currently working at Digital Reflow as the Lead Web Developer.",
+    }
   },
   components: {
-    'app-nav-link-in-body': NavLinkInBody,
-  },
-  beforeMount() {
-    axios.get('https://dev.to/api/articles?username=markmead').then((res) => console.log(res))
+    Button,
+    Title,
+    Paragraph,
+    Spacer,
   },
 }
 </script>
