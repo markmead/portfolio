@@ -3,15 +3,8 @@ const postcssPlugins = [tailwind()]
 
 module.exports = {
   siteName: 'Mark Mead',
-  plugins: [
-    {
-      use: 'gridsome-plugin-pug',
-      options: {
-        pug: {},
-        pugLoader: {},
-      },
-    },
-  ],
+  siteUrl: 'https://mead.im/',
+  plugins: [{ use: 'gridsome-plugin-pug' }, { use: '@gridsome/plugin-sitemap' }],
   css: {
     loaderOptions: {
       postcss: {
