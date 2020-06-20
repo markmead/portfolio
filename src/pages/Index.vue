@@ -13,17 +13,28 @@ import Paragraph from '@/components/Text/Paragraph'
 import Spacer from '@/components/Flow/Spacer'
 
 export default {
+  metaInfo: {
+    title: '👋 Welcome',
+    meta: [
+      {
+        key: 'description',
+        name: 'description',
+        content:
+          'Mark Mead is a 23 year old web developer in Essex, United Kingdom. Building websites in Ruby on Rails and JavaScript.'
+      }
+    ]
+  },
   data() {
     return {
       intro:
-        "I've been building websites for 4 years, these have ranged from travel insurance quote engines, lead generation focused, geolocating services, forums, ecommerce and more. I'm currently working at Digital Reflow as the Lead Web Developer.",
+        "I've been building websites for 4 years, these have ranged from travel insurance quote engines, lead generation focused, geolocating services, forums, ecommerce and more. I'm currently working at Digital Reflow as the Lead Web Developer."
     }
   },
   components: {
     Button,
     Title,
     Paragraph,
-    Spacer,
-  },
+    Spacer
+  }
 }
 </script>

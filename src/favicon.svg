@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+
+  <style>
+    path { fill: #000; }
+
+    @media (prefers-color-scheme: dark) {
+      path { fill: #fff; }
+    }
+  </style>
+
+  <g transform="translate(-2802 -292)">
+    <rect width="180" height="180" transform="translate(2802 292)" fill="none"/>
+    <path d="M5.347,0V-3.3l11.279-.732v-96.46l-11.279-.732v-3.3H36.694l30.542,77.93h.146l28.711-77.93h30.029v3.3l-11.279.732v96.46l11.279.732V0H84.814V-3.3l11.279-.732L96.24-93.6h-.146L61.3,1.465h-2.71L19.922-97.046h-.146l1.1,93.018,11.06.732V0Z" transform="translate(2827 433)" />
+  </g>
+</svg>
