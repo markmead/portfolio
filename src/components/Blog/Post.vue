@@ -1,7 +1,7 @@
 <template lang="pug">
   Spacer(classes="space-y-2")
     Link(:path="path" :text="text")
-    Paragraph(:text="description" classes="max-w-sm")
+    Paragraph(:text="description" classes="maw-w-lg")
     Tags(:tags="tags")
 </template>
 
