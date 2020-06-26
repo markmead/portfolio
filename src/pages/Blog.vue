@@ -1,7 +1,7 @@
 <template lang="pug">
   Layout
     Spacer
-      Title(text="Sometimes I make posts on DEV.to")
+      Title(text="Sometimes I write about code.")
       Paragraph(:text="intro")
       Break
       Spacer
@@ -31,9 +31,9 @@ export default {
         key: 'description',
         name: 'description',
         content:
-          'As someone who has built himself up from Junior to Lead Web Developer, Mark has experience he wants to share with others making that transition.'
-      }
-    ]
+          'As someone who has built himself up from Junior to Lead Web Developer, Mark has experience he wants to share with others making that transition.',
+      },
+    ],
   },
   data() {
     return {
@@ -41,7 +41,7 @@ export default {
       error: false,
       blogs: null,
       intro:
-        "I'm not that much of a blogger, but when I do write I like to make posts about my experiences. I know when I started development that I took great interest in reading other peoples stories, learning how they overcome challenges and what the outcome was."
+        "I'm not that much of a blogger, but when I do write I like to make posts about my experiences. I know when I started development that I took great interest in reading other peoples stories, learning how they overcome challenges and what the outcome was.",
     }
   },
   components: {
@@ -50,19 +50,19 @@ export default {
     Subtitle,
     Spacer,
     Break,
-    Post
+    Post,
   },
   async beforeMount() {
     await axios
       .get('https://dev.to/api/articles?username=markmead')
-      .then(res => {
+      .then((res) => {
         this.blogs = res.data
         this.loading = false
       })
-      .catch(err => {
+      .catch((err) => {
         this.loading = false
         this.error = true
       })
-  }
+  },
 }
 </script>

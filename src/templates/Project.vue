@@ -41,7 +41,7 @@ export default {
     Title,
     Link,
     Content,
-    Tags,
-  },
+    Tags
+  }
 }
 </script>

@@ -1,7 +1,7 @@
 <template lang="pug">
   Layout
     Spacer
-      Title(text="Projects that I've worked on")
+      Title(text="I've built some websites.")
       Paragraph(:text="intro")
       Break
       Post(v-for="project in $page.projects.edges" :key="project.node.title"
@@ -41,13 +41,13 @@ export default {
         key: 'description',
         name: 'description',
         content:
-          'Using a range of technologies, Mark has built a large array of websites. These can be anything from lead generating, ecommerce, forums, landing pages, geolocation services and much more.'
-      }
-    ]
+          'Using a range of technologies, Mark has built a range of websites. These can be anything from lead generating, eCommerce, forums, landing pages, geolocation services and much more.',
+      },
+    ],
   },
   data() {
     return {
-      intro: "Here's a collection of projects that I've worked on."
+      intro: "Read up on some of the projects that I've worked/currently working on.",
     }
   },
   components: {
@@ -55,7 +55,7 @@ export default {
     Paragraph,
     Spacer,
     Break,
-    Post
-  }
+    Post,
+  },
 }
 </script>
