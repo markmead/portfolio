@@ -5,7 +5,18 @@ module.exports = {
   siteName: 'Mark Mead',
   siteUrl: 'https://mead.im',
   icon: './src/favicon.svg',
-  plugins: [{ use: 'gridsome-plugin-pug' }, { use: '@gridsome/plugin-sitemap' }],
+  plugins: [
+    { use: 'gridsome-plugin-pug' },
+    { use: '@gridsome/plugin-sitemap' },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Project',
+        path: './src/content/project/*.md',
+        route: '/work/:path',
+      },
+    },
+  ],
   css: {
     loaderOptions: {
       postcss: {

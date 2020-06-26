@@ -1,5 +1,5 @@
 <template lang="pug">
-  g-link(:to="path" class="link" :class="classes" :exact-active-class="activeClass") {{ text }}
+  g-link(:to="path" class="link" :class="classes") {{ text }}
 </template>
 
 <script>
@@ -8,22 +8,16 @@ export default {
     path: String,
     text: String,
     classes: String,
-    showActive: Boolean,
-  },
-  computed: {
-    activeClass() {
-      return this.showActive ? 'underline' : null
-    },
   },
 }
 </script>
 
 <style lang="scss" scoped>
 .link {
-  @apply text-lg leading-none inline-block;
+  @apply text-lg leading-none inline-block underline;
 
   &:hover {
-    @apply underline;
+    @apply no-underline opacity-75;
   }
 }
 </style>

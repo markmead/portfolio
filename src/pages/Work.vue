@@ -3,12 +3,35 @@
     Spacer
       Title(text="Projects that I've worked on")
       Paragraph(:text="intro")
+      Break
+      Post(v-for="project in $page.projects.edges" :key="project.node.title"
+                                                   :text="project.node.title" 
+                                                   :brand="project.node.brand"
+                                                   :path="project.node.path" 
+                                                   :description="project.node.description")
 </template>
+
+<page-query>
+query {
+  projects: allProject {
+    edges {
+      node {
+        title
+        brand
+        path
+        description
+      }
+    }
+  }
+}
+</page-query>
 
 <script>
 import Title from '@/components/Text/Title'
 import Paragraph from '@/components/Text/Paragraph'
 import Spacer from '@/components/Flow/Spacer'
+import Break from '@/components/Flow/Break'
+import Post from '@/components/Project/Post'
 
 export default {
   metaInfo: {
@@ -24,14 +47,15 @@ export default {
   },
   data() {
     return {
-      intro:
-        "I'll be adding some projects here soon. Just need to look into what headless CMS to use."
+      intro: "Here's a collection of projects that I've worked on."
     }
   },
   components: {
     Title,
     Paragraph,
-    Spacer
+    Spacer,
+    Break,
+    Post
   }
 }
 </script>

@@ -1,10 +1,10 @@
 <template lang="pug">
   nav(role="navigation" class="flex justify-end px-4 py-4 space-x-6 sm:px-6")
-    Link(v-for="page in pages" :key="page.path" :path="page.path" :text="page.text" showActive=true)
+    NavbarLink(v-for="page in pages" :key="page.path" :path="page.path" :text="page.text" :showActive="true")
 </template>
 
 <script>
-import Link from '@/components/UI/Link'
+import NavbarLink from '@/components/NavbarLink'
 
 export default {
   data() {
@@ -18,7 +18,7 @@ export default {
     }
   },
   components: {
-    Link,
+    NavbarLink,
   },
 }
 </script>
