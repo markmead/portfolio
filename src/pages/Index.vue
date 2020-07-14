@@ -1,40 +1,32 @@
-<template lang="pug">
-Layout
-  Spacer
-    Title(text="Hello, I'm Mark Mead. I build websites with Ruby on Rails and JavaScript.")
-    Paragraph(:text="intro")
-    Button(path="/about" text="About me" classes="primary")
+<template>
+  <Layout>
+    <div class="text-center">
+      <h1 class="text-4xl font-bold leading-tight tracking-tight sm:text-5xl md:text-6xl">
+        Hello, I'm
+        <br />
+        <span class="text-blue-600">Mark Mead</span>
+      </h1>
+      <div class="mt-4 text-6xl leading-none">👋</div>
+      <p class="max-w-md mx-auto mt-4 text-base text-gray-500 sm:text-lg md:text-xl md:max-w-xl">
+        A 23 year old web developer from Essex, creating user focused websites with Ruby on Rails, JavaScript and
+        Shopify.
+      </p>
+    </div>
+  </Layout>
 </template>
 
 <script>
-import Button from '@/components/UI/Button'
-import Title from '@/components/Text/Title'
-import Paragraph from '@/components/Text/Paragraph'
-import Spacer from '@/components/Flow/Spacer'
-
 export default {
   metaInfo: {
-    title: '👋 Welcome',
+    title: 'Welcome',
     meta: [
       {
         key: 'description',
         name: 'description',
         content:
-          'Mark Mead is a 23 year old web developer in Essex, United Kingdom. Building websites in Ruby on Rails and JavaScript.'
-      }
-    ]
+          'Mark Mead is a 23 year old web developer in Essex, United Kingdom. Building websites in Ruby on Rails and JavaScript.',
+      },
+    ],
   },
-  data() {
-    return {
-      intro:
-        "I've been building websites for 4 years, these have ranged from travel insurance quote engines, lead generation focused, geolocating services, forums, ecommerce and more. I'm currently working at Digital Reflow as the Lead Web Developer."
-    }
-  },
-  components: {
-    Button,
-    Title,
-    Paragraph,
-    Spacer
-  }
 }
 </script>

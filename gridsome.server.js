@@ -1,1 +1,1 @@
-module.exports = function(api) {}
+module.exports = function() {}

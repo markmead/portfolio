@@ -1,31 +1,35 @@
-<template lang="pug">
-  Layout
-    Spacer
-      Title(text="Sometimes I write about code.")
-      Paragraph(:text="intro")
-      Break
-      Spacer
-        Subtitle(text="Loading blogs..." v-if="this.loading")
-        Subtitle(text="Error fetching blogs, try and refresh" v-if="this.error")
-        Post(v-for="blog in blogs" :key="blog.url" 
-                                   :text="blog.title" 
-                                   :path="blog.url" 
-                                   :description="blog.description"
-                                   :tags="blog.tags.split(', ')")
+<template>
+  <Layout>
+    <h2 class="text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
+      Read the blog
+    </h2>
+    <div class="grid gap-12 pt-10 mt-6 border-t-2 border-gray-100 lg:grid-cols-2">
+      <div v-for="blog in blogs" :key="blog.id">
+        <time :datetime="blog.published_at" class="text-sm leading-none text-gray-500">
+          {{ blog.readable_publish_date }}
+        </time>
+        <a :href="blog.url" target="blank" class="block mt-2">
+          <h3 class="text-lg font-bold leading-tight">{{ blog.title }}</h3>
+          <p class="mt-2 text-base leading-tight text-gray-500">{{ blog.description }}</p>
+        </a>
+        <a
+          :href="blog.url"
+          target="blank"
+          class="inline-block mt-4 text-base font-semibold leading-none text-blue-600 transition duration-150 ease-in-out hover:text-blue-500"
+        >
+          Read full story
+        </a>
+      </div>
+    </div>
+  </Layout>
 </template>
 
 <script>
-import Title from '@/components/Text/Title'
-import Subtitle from '@/components/Text/Subtitle'
-import Paragraph from '@/components/Text/Paragraph'
-import Spacer from '@/components/Flow/Spacer'
-import Break from '@/components/Flow/Break'
-import Post from '@/components/Blog/Post'
 import axios from 'axios'
 
 export default {
   metaInfo: {
-    title: '📖 Blog',
+    title: 'Blog',
     meta: [
       {
         key: 'description',
@@ -40,17 +44,7 @@ export default {
       loading: true,
       error: false,
       blogs: null,
-      intro:
-        "I'm not that much of a blogger, but when I do write I like to make posts about my experiences. I know when I started development that I took great interest in reading other peoples stories, learning how they overcome challenges and what the outcome was.",
     }
-  },
-  components: {
-    Title,
-    Paragraph,
-    Subtitle,
-    Spacer,
-    Break,
-    Post,
   },
   async beforeMount() {
     await axios
