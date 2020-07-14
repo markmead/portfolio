@@ -2,7 +2,7 @@
   div
     Spacer(classes="space-y-2")
       Link(:path="path" :text="text")
-      Paragraph(:text="description" classes="maw-w-lg")
+      Paragraph(:text="description" classes="max-w-lg")
       Tags(:tags="tags" classes="-mt-2")
 </template>
 

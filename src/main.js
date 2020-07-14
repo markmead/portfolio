@@ -1,6 +1,4 @@
 import '@/main.css'
-import 'typeface-vidaloka'
-import 'typeface-roboto'
 
 import DefaultLayout from '@/layouts/Default'
 

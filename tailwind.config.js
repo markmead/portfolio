@@ -1,5 +1,3 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
-
 module.exports = {
   purge: {
     content: ['./src/**/*.vue'],
@@ -9,14 +7,10 @@ module.exports = {
   },
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['Roboto', ...defaultTheme.fontFamily.sans],
-        serif: ['Vidaloka ', ...defaultTheme.fontFamily.serif],
-      },
       colors: {
         primary: '#4A43F8',
       },
     },
   },
-  plugins: [require('@tailwindcss/ui')],
+  plugins: [require('@tailwindcss/ui'), require('@tailwindcss/typography')],
 }

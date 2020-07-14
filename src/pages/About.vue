@@ -3,15 +3,13 @@
     Spacer
       Title(text="I'm 23 years old and called Mark.")
       Paragraph(:text="intro")
-      Spacer(classes="space-y-1")
-        Subtitle(text="Developer")
-        Paragraph(:text="developer")
-      Spacer(classes="space-y-1")
-        Subtitle(text="Website")
-        Paragraph(:text="website")
-      Spacer(classes="space-y-1")
-        Subtitle(text="Hobbies")
-        Paragraph(:text="hobbies")
+      article.prose
+        h3 Developer
+        p {{ developer }}
+        h3 Website
+        p {{ website }}
+        h3 Hobbies
+        p {{ hobbies }}
 </template>
 
 <script>

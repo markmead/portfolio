@@ -14,7 +14,7 @@ export default {
 
 <style lang="scss" scoped>
 .link {
-  @apply text-2xl font-serif leading-tight underline;
+  @apply text-lg leading-none underline font-bold;
 
   &:hover {
     @apply no-underline;

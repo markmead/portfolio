@@ -1,5 +1,5 @@
 <template lang="pug">
-  h2(class="font-serif text-2xl leading-tight") {{ text }}
+  h2(class="text-2xl leading-tight") {{ text }}
 </template>
 
 <script>
