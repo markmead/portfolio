@@ -5,6 +5,7 @@ website: https://www.safetymen.co.uk/
 description: Creating a clearer user journey and improving management tools so the client, and the customers experience feels more automated.
 path: safetymen
 tech: ['Ruby on Rails', 'StimulusJS', 'Tailwind', 'Devise', 'RSpec']
+image: ../images/safetymen/home.png
 ---
 
 ### The challenge
