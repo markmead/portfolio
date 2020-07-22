@@ -14,11 +14,9 @@
     "gridsome": "^0.7.0"
   },
   "devDependencies": {
-    "@tailwindcss/ui": "^0.3.0",
     "@tailwindcss/typography": "tailwindcss/typography",
-    "gridsome-plugin-pug": "^0.0.3",
+    "@tailwindcss/ui": "^0.3.0",
     "node-sass": "^4.14.1",
-    "pug": "^3.0.0",
     "sass-loader": "^8.0.2",
     "tailwindcss": "^1.5.1"
   }

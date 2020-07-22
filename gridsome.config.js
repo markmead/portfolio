@@ -6,7 +6,6 @@ module.exports = {
   siteUrl: 'https://mead.im',
   icon: './src/favicon.svg',
   plugins: [
-    { use: 'gridsome-plugin-pug' },
     { use: '@gridsome/plugin-sitemap' },
     {
       use: '@gridsome/source-filesystem',
