@@ -1,5 +1,10 @@
-<template lang="pug">
-  g-link(:to="path" class="navbar-link" :class="classes" :exact-active-class="activeClass") {{ text }}
+<template>
+  <g-link
+    :to="path"
+    :exact-active-class="activeClass"
+    class="text-lg font-semibold leading-none text-black transition duration-150 ease-in-out hover:text-opacity-25"
+    >{{ text }}</g-link
+  >
 </template>
 
 <script>
@@ -12,7 +17,7 @@ export default {
   },
   computed: {
     activeClass() {
-      return this.showActive ? 'underline' : null
+      return this.showActive ? 'text-opacity-25' : null
     },
   },
 }

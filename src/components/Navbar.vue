@@ -1,6 +1,7 @@
-<template lang="pug">
-  nav(role="navigation" class="flex justify-end px-4 py-4 space-x-6 sm:px-6")
-    NavbarLink(v-for="page in pages" :key="page.path" :path="page.path" :text="page.text" :showActive="true")
+<template>
+  <nav class="fixed top-0 right-0 flex flex-col mt-10 mr-10 space-y-4">
+    <NavbarLink v-for="page in pages" :key="page.path" :path="page.path" :text="page.text" :showActive="true" />
+  </nav>
 </template>
 
 <script>

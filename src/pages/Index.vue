@@ -1,16 +1,16 @@
 <template>
   <Layout>
-    <div class="text-center">
-      <h1 class="text-4xl font-bold leading-tight tracking-tight sm:text-5xl md:text-6xl">
-        Hello, I'm
-        <br />
-        <span class="text-blue-600">Mark Mead</span>
-      </h1>
-      <div class="mt-4 text-6xl leading-none">👋</div>
-      <p class="max-w-md mx-auto mt-4 text-base text-gray-500 sm:text-lg md:text-xl md:max-w-xl">
-        A 23 year old web developer from Essex, creating user focused websites with Ruby on Rails, JavaScript and
-        Shopify.
-      </p>
+    <div class="flex items-end min-h-screen py-12 bg-no-repeat bg-cover bg-image home-gradient">
+      <div class="max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl">
+          <h1 class="text-4xl font-bold leading-tight tracking-tight sm:text-5xl md:text-6xl">Hey, I'm Mark</h1>
+          <div class="mt-4 font-medium prose prose-lg text-black text-opacity-75 sm:prose-xl">
+            <p>
+              A Ruby on Rails developer building websites that are worth looking at.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </Layout>
 </template>
@@ -30,3 +30,9 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.home-gradient {
+  background-image: url('../assets/home.jpg');
+}
+</style>

@@ -12,5 +12,8 @@ module.exports = {
       },
     },
   },
+  variants: {
+    textOpacity: ['hover', 'group-hover'],
+  },
   plugins: [require('@tailwindcss/ui'), require('@tailwindcss/typography')],
 }
