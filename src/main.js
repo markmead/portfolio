@@ -1,4 +1,4 @@
-import '@/main.css'
+import '@/main.scss'
 
 import DefaultLayout from '@/layouts/Default'
 

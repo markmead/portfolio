@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.prose ul > li::before {
+  @apply bg-black bg-opacity-75;
+}

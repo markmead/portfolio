@@ -7,15 +7,13 @@
           <div class="mt-4 space-y-8">
             <div v-for="project in $page.projects.edges" :key="project.node.id">
               <div class="flex flex-col">
-                <span class="text-sm font-medium leading-none text-black text-opacity-75">
-                  {{ project.node.brand }}
-                </span>
-                <a :href="project.node.path" class="block group">
+                <span
+                  class="text-sm font-medium leading-none text-black text-opacity-75"
+                >{{ project.node.brand }}</span>
+                <a :href="project.node.path" class="block mt-1 group">
                   <h3
-                    class="mt-1 text-lg font-bold leading-tight text-black transition duration-150 ease-in-out sm:text-xl group-hover:text-opacity-50"
-                  >
-                    {{ project.node.title }}
-                  </h3>
+                    class="text-lg font-bold leading-tight text-black transition duration-150 ease-in-out sm:text-xl group-hover:text-opacity-50"
+                  >{{ project.node.title }}</h3>
                   <div
                     class="max-w-md mt-2 font-medium prose text-black text-opacity-75 transition duration-150 ease-in-out group-hover:text-opacity-25"
                   >
