@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "scripts": {
-    "dev": "gridsome develop",
+    "start": "gridsome develop",
     "build": "gridsome build",
     "explore": "gridsome explore"
   },
@@ -16,6 +16,7 @@
   "devDependencies": {
     "@tailwindcss/typography": "tailwindcss/typography",
     "@tailwindcss/ui": "^0.3.0",
+    "gridsome-plugin-manifest": "^0.3.5",
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
     "tailwindcss": "^1.5.1"
