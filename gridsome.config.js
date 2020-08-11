@@ -21,9 +21,18 @@ module.exports = {
         background_color: '#FFF',
         icon_path: './src/favicon.png',
         name: 'Mark Mead Web Developer Portfolio',
-        short_name: 'Mark Mead Portfolio',
+        short_name: 'Mark Mead',
         theme_color: '#000',
         lang: 'en',
+      },
+    },
+    {
+      use: 'gridsome-plugin-service-worker',
+      options: {
+        networkFirst: {
+          cacheName: 'nf-v1',
+          routes: ['/', /\.(js|css|png)/],
+        },
       },
     },
   ],

@@ -17,6 +17,7 @@
     "@tailwindcss/typography": "tailwindcss/typography",
     "@tailwindcss/ui": "^0.3.0",
     "gridsome-plugin-manifest": "^0.3.5",
+    "gridsome-plugin-service-worker": "^0.1.5",
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
     "tailwindcss": "^1.5.1"

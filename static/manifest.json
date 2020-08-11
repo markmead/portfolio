@@ -2,7 +2,7 @@
     "background_color": "#FFF",
     "icon_path": "./src/favicon.png",
     "name": "Mark Mead Web Developer Portfolio",
-    "short_name": "Mark Mead Portfolio",
+    "short_name": "Mark Mead",
     "theme_color": "#000",
     "lang": "en",
     "display": "minimal-ui",
