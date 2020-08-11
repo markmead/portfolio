@@ -6,14 +6,15 @@
           <h1 class="text-4xl font-bold leading-tight tracking-tight sm:text-5xl md:text-6xl">Blog</h1>
           <div class="mt-4 space-y-8">
             <div v-for="blog in blogs" :key="blog.id">
-              <time
-                :datetime="blog.published_at"
-                class="text-sm font-medium leading-none text-black text-opacity-75"
-              >{{ blog.readable_publish_date }}</time>
+              <time :datetime="blog.published_at" class="text-sm font-medium leading-none text-black text-opacity-75">{{
+                blog.readable_publish_date
+              }}</time>
               <a :href="blog.url" target="blank" class="block mt-1 group">
-                <h3
+                <h2
                   class="text-lg font-bold leading-tight text-black transition duration-150 ease-in-out sm:text-xl group-hover:text-opacity-50"
-                >{{ blog.title }}</h3>
+                >
+                  {{ blog.title }}
+                </h2>
                 <div
                   class="max-w-md mt-2 font-medium prose text-black text-opacity-75 transition duration-150 ease-in-out group-hover:text-opacity-25"
                 >
@@ -27,7 +28,6 @@
     </div>
   </Layout>
 </template>
-
 
 <script>
 import axios from 'axios'

@@ -6,7 +6,9 @@
           <a :href="$page.project.website" target="blank" class="flex flex-col group">
             <h1
               class="text-4xl font-bold leading-tight tracking-tight text-black sm:text-5xl md:text-6xl group-hover:text-opacity-50"
-            >{{ $page.project.title }}</h1>
+            >
+              {{ $page.project.title }}
+            </h1>
             <svg
               class="w-10 h-10 text-black group-hover:text-opacity-25"
               fill="none"
@@ -16,21 +18,15 @@
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
-              <path
-                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-              />
+              <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
             </svg>
           </a>
-          <div
-            class="max-w-md mt-4 font-medium prose text-black text-opacity-75 transition duration-150 ease-in-out group-hover:text-opacity-25"
-            v-html="$page.project.content"
-          ></div>
+          <div class="max-w-lg mt-4 font-medium prose text-black text-opacity-75" v-html="$page.project.content"></div>
         </div>
       </div>
     </div>
   </Layout>
 </template>
-
 
 <page-query>
 query Project($path: String!) {
