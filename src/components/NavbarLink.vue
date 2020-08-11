@@ -2,7 +2,8 @@
   <g-link
     :to="path"
     :exact-active-class="activeClass"
-    class="text-lg font-semibold leading-none text-black transition duration-150 ease-in-out hover:text-opacity-25"
+    :class="classes"
+    class="text-lg font-semibold leading-none transition duration-150 ease-in-out hover:text-opacity-25"
     >{{ text }}</g-link
   >
 </template>
@@ -13,22 +14,11 @@ export default {
     path: String,
     text: String,
     classes: String,
-    showActive: Boolean,
   },
   computed: {
     activeClass() {
-      return this.showActive ? 'text-opacity-25' : null
+      return 'text-opacity-25'
     },
   },
 }
 </script>
-
-<style lang="scss" scoped>
-.navbar-link {
-  @apply text-lg leading-none inline-block;
-
-  &:hover {
-    @apply underline;
-  }
-}
-</style>
