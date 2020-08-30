@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.prose ul > li::before {
-  @apply bg-black bg-opacity-75;
+.drop-shadow {
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.4));
+}
+
+.badge-icon {
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.2));
 }

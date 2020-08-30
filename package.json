@@ -11,6 +11,7 @@
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.0",
     "axios": "^0.19.2",
+    "dayjs": "^1.8.34",
     "gridsome": "^0.7.0"
   },
   "devDependencies": {
@@ -20,6 +21,6 @@
     "gridsome-plugin-service-worker": "^0.1.5",
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
-    "tailwindcss": "^1.5.1"
+    "tailwindcss": "^1.7.0"
   }
 }

@@ -1,42 +1,32 @@
 <template>
-  <div class="fixed top-0 right-0 flex flex-col items-end mt-4 mr-4 md:mt-10 md:mr-10">
-    <button
-      @click="toggleNav"
-      class="inline-flex px-4 py-2 text-lg font-semibold leading-none text-white bg-black md:hidden focus:outline-none focus:shadow-outline"
-    >
-      Menu
-    </button>
-    <nav v-if="open" class="flex flex-col px-8 py-4 space-y-4 bg-black md:hidden">
-      <NavbarLink v-for="page in pages" :key="page.path" :path="page.path" :text="page.text" classes="text-white" />
-    </nav>
-    <nav class="flex-col hidden space-y-4 md:flex">
-      <NavbarLink v-for="page in pages" :key="page.path" :path="page.path" :text="page.text" classes="text-black" />
-    </nav>
-  </div>
+  <nav role="navigation" class="sticky inset-x-0 top-0 z-50 bg-white border-b border-gray-200">
+    <div class="flex items-center justify-between px-4 py-6">
+      <g-link to="/" class="text-lg font-medium leading-none text-gray-700">
+        Mark Mead
+      </g-link>
+      <p class="text-lg font-medium leading-none text-gray-700">{{ day }}, {{ time }}</p>
+    </div>
+  </nav>
 </template>
 
 <script>
-import NavbarLink from '@/components/NavbarLink'
+import dayjs from 'dayjs'
+import LocalizedFormat from 'dayjs/plugin/localizedFormat'
 
 export default {
   data() {
     return {
-      open: false,
-      pages: [
-        { path: '/', text: 'Home' },
-        { path: '/about', text: 'About' },
-        { path: '/work', text: 'Work' },
-        { path: '/blog', text: 'Blog' },
-      ],
+      day: '',
+      time: '',
     }
   },
-  methods: {
-    toggleNav() {
-      this.open = !this.open
-    },
-  },
-  components: {
-    NavbarLink,
+  mounted() {
+    dayjs.extend(LocalizedFormat)
+
+    setInterval(() => {
+      this.day = dayjs().format('dddd')
+      this.time = dayjs().format('LT')
+    }, 1000)
   },
 }
 </script>
