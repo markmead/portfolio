@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <Title text="Blogs" />
-    <div class="mt-8 space-y-8">
+    <div class="space-y-8">
       <div v-if="loading && !error">Loading</div>
       <div v-if="!loading && error">Error</div>
       <template v-if="blogs">

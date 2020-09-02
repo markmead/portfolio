@@ -1,6 +1,3 @@
-const tailwind = require('tailwindcss')
-const postcssPlugins = [tailwind()]
-
 module.exports = {
   siteName: 'Mark Mead',
   siteUrl: 'https://mead.im',
@@ -11,8 +8,8 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         typeName: 'Project',
-        path: './src/content/project/*.md',
-        route: '/work/:path',
+        path: './src/content/projects/*.md',
+        route: '/projects/:path',
       },
     },
     {
@@ -20,7 +17,7 @@ module.exports = {
       options: {
         background_color: '#FFF',
         icon_path: './src/favicon.png',
-        name: 'Mark Mead Web Developer Portfolio',
+        name: 'Mark Mead Portfolio',
         short_name: 'Mark Mead',
         theme_color: '#000',
         lang: 'en',
@@ -39,7 +36,7 @@ module.exports = {
   css: {
     loaderOptions: {
       postcss: {
-        plugins: postcssPlugins,
+        plugins: [require(tailwindcss())],
       },
     },
   },

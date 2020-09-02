@@ -1,7 +1,11 @@
 <template>
-  <div class="min-h-screen font-sans bg-gray-50">
+  <div class="font-sans bg-gray-50">
     <Header />
-    <main role="main" id="main-content" class="max-w-2xl min-h-screen px-4 py-12 mx-auto">
+    <main
+      role="main"
+      id="main-content"
+      class="max-w-2xl px-4 py-12 mx-auto space-y-8 md:min-h-screen"
+    >
       <slot />
     </main>
     <Footer />

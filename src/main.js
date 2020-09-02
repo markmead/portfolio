@@ -1,4 +1,5 @@
 import '@/main.scss'
+
 import DefaultLayout from '@/layouts/Default'
 
 export default function(Vue) {

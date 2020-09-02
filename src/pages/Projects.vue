@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <Title text="Projects" />
-    <div class="mt-8 space-y-8">
+    <div class="space-y-8">
       <CardLink
         v-for="project in $page.projects.edges"
         :key="project.node.id"
