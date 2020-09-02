@@ -1,5 +1,5 @@
 <template>
-  <span class="font-medium text-black text-opacity-50">{{ day }}, {{ time }}</span>
+  <span class="font-medium text-black text-opacity-50">{{ currentTime }}</span>
 </template>
 
 <script>
@@ -9,16 +9,23 @@ import LocalizedFormat from 'dayjs/plugin/localizedFormat'
 export default {
   data() {
     return {
-      day: '',
-      time: '',
+      currentTime: '',
     }
+  },
+  beforeMount() {
+    const localCurrentTime = localStorage.getItem('currentTime')
+
+    if (localCurrentTime) this.currentTime = localCurrentTime
   },
   mounted() {
     dayjs.extend(LocalizedFormat)
 
     setInterval(() => {
-      this.day = dayjs().format('dddd')
-      this.time = dayjs().format('LT')
+      const currentTime = `${dayjs().format('dddd')}, ${dayjs().format('LT')}`
+
+      this.currentTime = currentTime
+      localStorage.clear()
+      localStorage.setItem('currentTime', currentTime)
     }, 1000)
   },
 }
