@@ -2,10 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-.drop-shadow {
-  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.4));
-}
-
-.badge-icon {
-  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.2));
+.prose {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-medium;
+  }
 }

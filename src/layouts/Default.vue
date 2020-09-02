@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen font-sans bg-gray-50">
-    <Navbar />
-    <main>
+    <Header />
+    <main role="main" id="main-content" class="max-w-2xl min-h-screen px-4 py-12 mx-auto">
       <slot />
     </main>
     <Footer />
@@ -9,12 +9,12 @@
 </template>
 
 <script>
-import Navbar from '@/components/Navbar'
+import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
 export default {
   components: {
-    Navbar,
+    Header,
     Footer,
   },
 }

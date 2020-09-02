@@ -1,9 +1,7 @@
 <template>
-  <footer class="bg-white border-t border-gray-200">
-    <div class="flex items-center justify-between px-4 py-6">
-      <p class="text-lg font-medium leading-none text-gray-700">
-        Built with Vue, Axios, DEV.to API, Tailwind and Gridsome.
-      </p>
-    </div>
+  <footer class="px-4 py-3 bg-white border-t border-gray-200">
+    <p
+      class="font-medium text-black text-opacity-50"
+    >Built with Vue, Axios, DEV.to, Tailwind and Gridsome.</p>
   </footer>
 </template>
