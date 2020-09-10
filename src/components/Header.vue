@@ -1,5 +1,5 @@
 <template>
-  <header role="navigation" class="sticky inset-x-0 top-0 z-50 bg-white border-b border-gray-200">
+  <header class="sticky inset-x-0 top-0 z-50 bg-white border-b border-gray-200">
     <div class="flex items-center justify-between px-4 py-3">
       <Logo />
       <div class="space-x-4">

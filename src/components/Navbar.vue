@@ -1,5 +1,5 @@
 <template>
-  <nav class="inline-flex items-center space-x-2">
+  <nav class="inline-flex items-center space-x-2" role="navigation">
     <NavbarLink to="/projects" text="Projects" />
     <span class="font-medium">/</span>
     <NavbarLink to="/blog" text="Blog" />

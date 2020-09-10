@@ -2,33 +2,32 @@
 title: Modernising an industry leader and simplifying their workflow
 brand: Safetymen
 website: https://www.safetymen.co.uk/
-description: Creating a clearer user journey and improving management tools so the client, and the customers experience feels more automated.
+description: Crafting an admin system to enable easier course management for the client.
 path: safetymen
 tech: ['Ruby on Rails', 'StimulusJS', 'Tailwind', 'Devise', 'RSpec']
-image: ../images/safetymen/iphone.png
 ---
 
-## The challenge
+## Challenge
 
-The client wanted to automate the whole courses process for themselves and the customers.
+Improve the experience of courses management, and create a more pleasing user experience.
 
-## The solution
+## Solution
 
 - Build out a CRUD app with Ruby on Rails for courses
 - Create a custom admin area to manage courses
 - Implement Stripe payment and courses booking for customers
 - Add autofill search where courses have multiple search terms
 
-## What we built
+## Product
 
 ![Home](../images/safetymen/home.png)
-Shows upcoming courses that are bookable below the banner.
+Shows upcoming courses that are bookable above the fold.
 
 ![Search](../images/safetymen/search.png)
 Custom search implemented with [StimulusJS](https://stimulusjs.org/) with JSON data supplied from Rails.
 
 ![Course](../images/safetymen/course.png)
-Individual courses that showcase off the courses info, as well as upcoming bookable courses.
+Individual course page that gives more information about the course, and shows bookable dates for the course, or related courses available.
 
 ![Admin](../images/safetymen/admin.png)
 An admin dasboard to manage courses, news and bookable courses (events).
@@ -37,4 +36,4 @@ An admin dasboard to manage courses, news and bookable courses (events).
 Courses view in the admin dashboard with pagination, category filtering and search.
 
 ![Admin course](../images/safetymen/admin-course.png)
-Individual course form with WSYIWYG editor built from [Trix](https://trix-editor.org/).
+Individual course form with a WSYIWYG editor built from [Trix](https://trix-editor.org/).
