@@ -17,7 +17,7 @@
 
 <page-query>
 query { 
-  projects: allProject { 
+  projects: allProject(order: ASC) { 
     edges {
       node { 
         title 

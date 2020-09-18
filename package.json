@@ -11,8 +11,8 @@
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.0",
     "axios": "^0.19.2",
-    "dayjs": "^1.8.34",
-    "gridsome": "^0.7.0"
+    "gridsome": "^0.7.0",
+    "kbdayz": "^1.0.1"
   },
   "devDependencies": {
     "@tailwindcss/typography": "tailwindcss/typography",

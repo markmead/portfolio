@@ -3,8 +3,7 @@
 </template>
 
 <script>
-import dayjs from 'dayjs'
-import LocalizedFormat from 'dayjs/plugin/localizedFormat'
+import DateFormat from 'kbdayz'
 
 export default {
   data() {
@@ -18,10 +17,12 @@ export default {
     if (localCurrentTime) this.currentTime = localCurrentTime
   },
   mounted() {
-    dayjs.extend(LocalizedFormat)
-
     setInterval(() => {
-      const currentTime = `${dayjs().format('dddd')}, ${dayjs().format('LT')}`
+      const currentTime = `${new DateFormat(new Date(), {
+        lang: 'en',
+        country: 'UK',
+        timeStyle: 'short',
+      }).format()}`
 
       this.currentTime = currentTime
       localStorage.clear()
