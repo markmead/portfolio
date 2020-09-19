@@ -25,6 +25,7 @@ export default {
       }).format()}`
 
       this.currentTime = currentTime
+
       localStorage.clear()
       localStorage.setItem('currentTime', currentTime)
     }, 1000)

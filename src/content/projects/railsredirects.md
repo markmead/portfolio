@@ -2,14 +2,14 @@
 title: Easily create redirects in Ruby on Rails from a CSV file
 brand: Open Source
 website: https://www.safetymen.co.uk/
-description:
+description: Upload a CSV, remove the redirects you don't need, change the status code and click copy
 path: railsredirects
-tech: ['Vue', 'PapaParse']
+tech: ['Vue', 'PapaParse', 'Tailwind']
 ---
 
 ## Reason
 
-Easily, once a week I will recieve a CSV of 301 or 500 redirects from marketing for a website we've worked or are working on. The process of uploading these redirects is tiresome.
+Once a week I will recieve a CSV of 301 or 500 redirects from marketing for a website we've worked or are working on. The process of uploading these redirects is tiresome.
 
 ## Solution
 
