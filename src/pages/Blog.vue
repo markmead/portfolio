@@ -19,23 +19,9 @@
   </Layout>
 </template>
 
-<page-query>
-query { 
-  projects: allProject { 
-    edges {
-      node { 
-        title 
-        brand 
-        description 
-        path 
-      } 
-    } 
-  } 
-}
-</page-query>
-
 <script>
 import axios from 'axios'
+
 import Title from '@/components/Title'
 import CardLink from '@/components/CardLink'
 
@@ -46,9 +32,9 @@ export default {
   },
   data() {
     return {
-      loading: true,
-      error: false,
       blogs: null,
+      error: false,
+      loading: true,
     }
   },
   async beforeMount() {
