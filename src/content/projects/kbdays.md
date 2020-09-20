@@ -1,7 +1,7 @@
 ---
 title: Under 1KB Date/Time Formatter
-brand: KBDayz
-website: https://github.com/markmead/kbdayz
-path: kbdayz
+brand: kbDays
+website: https://github.com/markmead/kbdays
+path: kbdays
 tech: ['JavaScript', 'Babel', 'NPM']
 ---
