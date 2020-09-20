@@ -11,7 +11,6 @@
           :to="blog.url"
           :subtitle="blog.readable_publish_date"
           :title="blog.title"
-          :summary="blog.description"
           :external="true"
         />
       </template>
@@ -51,4 +50,3 @@ export default {
   },
 }
 </script>
-

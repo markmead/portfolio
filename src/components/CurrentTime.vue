@@ -21,6 +21,7 @@ export default {
       const currentTime = `${new DateFormat(new Date(), {
         lang: 'en',
         country: 'UK',
+        dateStyle: 'short',
         timeStyle: 'short',
       }).format()}`
 
