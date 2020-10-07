@@ -4,6 +4,6 @@ import 'typeface-inter'
 
 import DefaultLayout from '@/layouts/Default'
 
-export default function (Vue) {
+export default function(Vue) {
   Vue.component('Layout', DefaultLayout)
 }
