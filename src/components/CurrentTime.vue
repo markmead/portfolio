@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import DateFormat from 'kbdayz'
+import DateFormat from 'kbdays'
 
 export default {
   data() {
@@ -33,4 +33,3 @@ export default {
   },
 }
 </script>
-
