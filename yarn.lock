@@ -5835,10 +5835,10 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.10.0"
 
-kbdayz@^1.0.1:
+kbdays@^1.0.1:
   version "1.0.1"
-  resolved "https://registry.npmjs.org/kbdayz/-/kbdayz-1.0.1.tgz#83f75d0c9da8aac0507c31fa254e037217d550eb"
-  integrity sha512-Lnz+8ntXVRvUOSGdo0qZYALmcZGzf9JvKLTfd3hOUge0rcR0QAGOA22VOwK787PrgdUAuvC6S13yHEp27HCqpQ==
+  resolved "https://registry.npmjs.org/kbdays/-/kbdays-1.0.1.tgz#7837534dbe1d72c041631367ec9cc67f1dbc3491"
+  integrity sha512-kLskT+AoStehmzaZjRI9eKPxld21VFmR8oJhLClxvNSY1nsNiksKpvZIldcDtVtMHvHxKUkYA7y+qkZF/ou37A==
 
 keyv@3.0.0:
   version "3.0.0"
