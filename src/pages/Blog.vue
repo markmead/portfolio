@@ -12,6 +12,7 @@
           :subtitle="blog.readable_publish_date"
           :title="blog.title"
           :external="true"
+          :summary="blog.description"
         />
       </template>
     </div>
@@ -48,5 +49,14 @@ export default {
         this.error = true
       })
   },
+    metaInfo: {
+    title: 'Development Blogs',
+    meta: [
+      {
+        name: 'description',
+        content: 'Blogs that I have written about development, featuring; tips, tutorials and more'
+      }
+    ],
+  }
 }
 </script>

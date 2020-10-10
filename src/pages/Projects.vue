@@ -39,5 +39,14 @@ export default {
     Title,
     CardLink,
   },
+  metaInfo: {
+    title: 'Development Projects',
+    meta: [
+      {
+        name: 'description',
+        content: 'Projects that I have worked on featuring Ruby on Rails, Vue, Shopify and more.'
+      }
+    ],
+  }
 }
 </script>

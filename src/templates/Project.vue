@@ -40,5 +40,16 @@ export default {
     Tech,
     Break,
   },
+  metaInfo() {
+    return {
+      title: this.$page.project.title,
+      meta: [
+        {
+          name: 'description',
+          content: this.$page.project.description,
+        },
+      ],
+    }
+  },
 }
 </script>

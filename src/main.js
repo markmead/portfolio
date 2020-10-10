@@ -1,6 +1,5 @@
-import '@/main.scss'
-
 import 'typeface-inter'
+import '@/main.scss'
 
 import DefaultLayout from '@/layouts/Default'
 

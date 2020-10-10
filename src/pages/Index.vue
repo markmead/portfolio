@@ -78,5 +78,14 @@ export default {
         this.error = true
       })
   },
+  metaInfo: {
+    title: 'Ruby on Rails Developer',
+    meta: [
+      {
+        name: 'description',
+        content: 'Ruby on Rails developer with Shopify and Vue experience based in Colchester, Essex, United Kingdom.'
+      }
+    ],
+  }
 }
 </script>
