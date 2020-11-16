@@ -2,19 +2,15 @@
   <Layout>
     <Title text="Blogs" />
     <div class="space-y-8">
-      <div v-if="loading && !error">Loading</div>
-      <div v-if="!loading && error">Error</div>
-      <template v-if="blogs">
-        <CardLink
-          v-for="blog in blogs"
-          :key="blog.id"
-          :to="blog.url"
-          :subtitle="blog.readable_publish_date"
-          :title="blog.title"
-          :external="true"
-          :summary="blog.description"
-        />
-      </template>
+      <CardLink
+        v-for="blog in blogs"
+        :key="blog.id"
+        :to="blog.url"
+        :subtitle="blog.readable_publish_date"
+        :title="blog.title"
+        :external="true"
+        :summary="blog.description"
+      />
     </div>
   </Layout>
 </template>
@@ -33,30 +29,21 @@ export default {
   data() {
     return {
       blogs: null,
-      error: false,
-      loading: true,
     }
   },
   async beforeMount() {
-    await axios
-      .get('https://dev.to/api/articles?username=markmead')
-      .then((res) => {
-        this.blogs = res.data
-        this.loading = false
-      })
-      .catch((err) => {
-        this.loading = false
-        this.error = true
-      })
+    await axios.get('https://dev.to/api/articles?username=markmead').then((res) => {
+      this.blogs = res.data
+    })
   },
-    metaInfo: {
+  metaInfo: {
     title: 'Development Blogs',
     meta: [
       {
         name: 'description',
-        content: 'Blogs that I have written about development, featuring; tips, tutorials and more'
-      }
+        content: 'Blogs that I have written about development, featuring; tips, tutorials and more',
+      },
     ],
-  }
+  },
 }
 </script>

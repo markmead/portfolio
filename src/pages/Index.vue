@@ -56,8 +56,6 @@ export default {
     return {
       content,
       blogs: null,
-      error: false,
-      loading: true,
     }
   },
   components: {
@@ -67,25 +65,18 @@ export default {
     Break,
   },
   async beforeMount() {
-    await axios
-      .get('https://dev.to/api/articles?username=markmead')
-      .then((res) => {
-        this.blogs = res.data.slice(0, 2)
-        this.loading = false
-      })
-      .catch((err) => {
-        this.loading = false
-        this.error = true
-      })
+    await axios.get('https://dev.to/api/articles?username=markmead').then((res) => {
+      this.blogs = res.data.slice(0, 2)
+    })
   },
   metaInfo: {
     title: 'Ruby on Rails Developer',
     meta: [
       {
         name: 'description',
-        content: 'Ruby on Rails developer with Shopify and Vue experience based in Colchester, Essex, United Kingdom.'
-      }
+        content: 'Ruby on Rails developer with Shopify and Vue experience based in Colchester, Essex, United Kingdom.',
+      },
     ],
-  }
+  },
 }
 </script>
