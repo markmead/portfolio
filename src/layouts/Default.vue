@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray-50">
     <Header />
-    <main role="main" class="max-w-2xl px-4 py-12 mx-auto space-y-8">
+    <main class="max-w-2xl px-4 py-12 mx-auto space-y-8">
       <slot />
     </main>
     <Footer />
