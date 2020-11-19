@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <Title text="Hello, I'm Mark" />
-    <Content :content="content" />
+    <Content content="<p>23 year old web developer, finding solutions with Vue, Shopify &amp; Ruby on Rails.</p>" />
     <Break />
     <div class="space-y-8">
       <CardLink
@@ -49,12 +49,9 @@ import Content from '@/components/Content'
 import CardLink from '@/components/CardLink'
 import Break from '@/components/Break'
 
-import { content } from '../assets/data/index'
-
 export default {
   data() {
     return {
-      content,
       blogs: null,
     }
   },
