@@ -1,6 +1,9 @@
 <template>
-  <g-link to="/" class="flex-shrink-0 w-12">
-    <g-image src="../assets/images/badge.svg" alt="Mark Mead app style icon" />
-    <span class="ml-2 sr-only">Mark Mead</span>
+  <g-link
+    to="/"
+    class="inline-flex items-center justify-center flex-shrink-0 px-5 py-2.5 font-medium text-black bg-green-300 text-sm uppercase hover:bg-black hover:text-green-300"
+  >
+    Mark
+    <span class="hidden ml-1 sm:block">Mead</span>
   </g-link>
 </template>

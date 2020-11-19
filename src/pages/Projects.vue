@@ -17,13 +17,13 @@
 
 <page-query>
 query { 
-  projects: allProject(order: DESC) { 
+  projects: allProject(order: ASC, filter: { show: { eq: true } }) {
     edges {
       node { 
         title 
         brand 
         description 
-        path 
+        path
       } 
     } 
   } 
@@ -44,9 +44,9 @@ export default {
     meta: [
       {
         name: 'description',
-        content: 'Projects that I have worked on featuring Ruby on Rails, Vue, Shopify and more.'
-      }
+        content: 'Projects that I have worked on featuring Ruby on Rails, Vue, Shopify and more.',
+      },
     ],
-  }
+  },
 }
 </script>

@@ -1,15 +1,34 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  purge: {
-    content: ['./src/**/*.vue'],
-  },
+  purge: ['./src/**/*.vue'],
+  darkMode: false,
   theme: {
+    typography: (theme) => ({
+      default: {
+        css: {
+          color: theme('colors.gray.800'),
+          a: {
+            position: 'relative',
+            textDecoration: 'none',
+            '&:hover': {
+              textDecoration: 'none',
+            },
+          },
+          strong: {
+            fontWeight: theme('fontWeight.medium'),
+          },
+        },
+      },
+    }),
     extend: {
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        mono: ['Roboto Mono', ...defaultTheme.fontFamily.mono],
       },
     },
   },
-  plugins: [require('@tailwindcss/ui'), require('@tailwindcss/typography')],
+  variants: {
+    extend: {},
+  },
+  plugins: [require('@tailwindcss/typography')],
 }

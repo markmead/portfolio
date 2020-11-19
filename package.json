@@ -8,21 +8,23 @@
   },
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.2",
-    "@gridsome/plugin-sitemap": "^0.3.0",
+    "@gridsome/plugin-sitemap": "^0.4.0",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.0",
-    "axios": "^0.19.2",
+    "autoprefixer": "^9",
+    "axios": "^0.21.0",
     "gridsome": "^0.7.0",
     "kbdays": "^1.0.1",
-    "typeface-inter": "^3.15.0"
+    "postcss": "^7",
+    "tailwindcss": "^2.0.1-compat",
+    "typeface-inter": "^3.15.0",
+    "typeface-roboto-mono": "^1.1.13"
   },
   "devDependencies": {
     "@tailwindcss/typography": "tailwindcss/typography",
-    "@tailwindcss/ui": "^0.3.0",
     "gridsome-plugin-manifest": "^0.3.5",
-    "gridsome-plugin-service-worker": "^0.1.5",
-    "node-sass": "^4.14.1",
-    "sass-loader": "^8.0.2",
-    "tailwindcss": "^1.7.0"
+    "gridsome-plugin-service-worker": "^0.2.6",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0"
   }
 }

@@ -1,7 +1,7 @@
 <template>
   <Layout>
-    <Title text="Mark" />
-    <Content :content="content" />
+    <Title text="Hello, I'm Mark" />
+    <Content content="<p>23 year old web developer, finding solutions with Vue, Shopify &amp; Ruby on Rails.</p>" />
     <Break />
     <div class="space-y-8">
       <CardLink
@@ -28,7 +28,7 @@
 
 <page-query>
 query { 
-  projects: allProject(order: DESC, limit: 2) { 
+  projects: allProject(order: ASC, filter: { show: { eq: true } }, limit: 2) {
     edges {
       node { 
         title 
@@ -49,12 +49,9 @@ import Content from '@/components/Content'
 import CardLink from '@/components/CardLink'
 import Break from '@/components/Break'
 
-import { content } from '../assets/data/index'
-
 export default {
   data() {
     return {
-      content,
       blogs: null,
     }
   },

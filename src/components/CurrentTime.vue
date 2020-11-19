@@ -1,5 +1,7 @@
 <template>
-  <span class="font-medium text-black text-opacity-50">{{ currentTime }}</span>
+  <span class="inline-flex items-center px-3 py-2 text-xs text-green-300 bg-black">
+    {{ currentTime }}
+  </span>
 </template>
 
 <script>
@@ -18,12 +20,15 @@ export default {
   },
   mounted() {
     setInterval(() => {
-      const currentTime = `${new DateFormat(new Date(), {
+      let currentTime = new DateFormat(new Date(), {
         lang: 'en',
         country: 'UK',
-        dateStyle: 'short',
         timeStyle: 'short',
-      }).format()}`
+      })
+
+      if (window.innerWidth > 600) currentTime.dateStyle = 'short'
+
+      currentTime = `${currentTime.format()}`
 
       this.currentTime = currentTime
 
