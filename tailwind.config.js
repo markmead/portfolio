@@ -1,7 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  purge: [],
+  purge: ['./src/**/*.vue'],
   darkMode: false,
   theme: {
     typography: (theme) => ({
@@ -11,6 +11,9 @@ module.exports = {
           a: {
             position: 'relative',
             textDecoration: 'none',
+            '&:hover': {
+              textDecoration: 'none',
+            },
           },
         },
       },

@@ -20,7 +20,7 @@
   a {
     &:before {
       content: '';
-      @apply bg-green-300 absolute inset-x-0 bottom-1 left-1 h-1 transition-all duration-100 ease-in bg-opacity-75;
+      @apply bg-green-300 absolute inset-x-0 bottom-1 left-1 h-1 transition-all;
     }
 
     &:hover {
@@ -29,4 +29,8 @@
       }
     }
   }
+}
+
+.backdrop-blur {
+  backdrop-filter: blur(5px);
 }
