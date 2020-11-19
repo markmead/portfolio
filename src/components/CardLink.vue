@@ -1,14 +1,14 @@
 <template>
   <div class="relative group">
-    <a :href="to" :target="external ? '_blank' : '_self'" class="relative z-10 block border-2 border-black">
-      <div class="flex items-center justify-between p-6 bg-black">
-        <p class="text-sm font-medium text-green-300 uppercase">{{ subtitle }}</p>
-        <p class="text-xs font-medium bg-white px-2.5 py-1 uppercase" v-if="external">
+    <a :href="to" :target="external ? '_blank' : '_self'" class="relative z-10 block font-medium border-2 border-black">
+      <div class="flex items-center justify-between p-6 uppercase bg-black">
+        <p class="text-sm text-green-300">{{ subtitle }}</p>
+        <p class="text-xs bg-white px-2.5 py-1" v-if="external">
           DEV.to
         </p>
       </div>
       <div class="p-6 transition-colors bg-white group-hover:bg-green-300">
-        <h2 class="mt-2 text-xl font-medium">{{ title }}</h2>
+        <h2 class="text-xl">{{ title }}</h2>
         <p class="mt-2 text-base text-gray-800">{{ summary }}</p>
       </div>
     </a>
