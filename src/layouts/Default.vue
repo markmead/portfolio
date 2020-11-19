@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-50">
+  <div class="font-mono bg-gray-50">
     <Header />
     <main class="max-w-2xl px-4 py-12 mx-auto space-y-8">
       <slot />
