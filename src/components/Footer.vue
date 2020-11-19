@@ -1,6 +1,6 @@
 <template>
   <footer class="px-5 py-2.5 bg-white">
-    <p class="font-medium text-gray-800">
+    <p class="text-sm font-medium text-gray-800">
       Built with
       <span v-for="(link, index) in links" :key="link.name">
         <span class="prose" v-if="index !== links.length - 1">
