@@ -20,12 +20,15 @@ export default {
   },
   mounted() {
     setInterval(() => {
-      const currentTime = `${new DateFormat(new Date(), {
+      let currentTime = new DateFormat(new Date(), {
         lang: 'en',
         country: 'UK',
-        dateStyle: 'short',
         timeStyle: 'short',
-      }).format()}`
+      })
+
+      if (window.innerWidth > 600) currentTime.dateStyle = 'short'
+
+      currentTime = `${currentTime.format()}`
 
       this.currentTime = currentTime
 

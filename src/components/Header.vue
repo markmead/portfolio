@@ -3,8 +3,8 @@
     <div class="flex items-center justify-between px-5 py-2.5">
       <Logo />
       <div class="space-x-4">
-        <CurrentTime />
         <Navbar />
+        <CurrentTime />
       </div>
     </div>
   </header>
