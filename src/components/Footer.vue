@@ -1,12 +1,12 @@
 <template>
-  <footer class="px-4 py-3 bg-white border-t border-gray-200">
-    <p class="font-medium text-black text-opacity-50">
+  <footer class="px-5 py-2.5 bg-white">
+    <p class="font-medium text-gray-800">
       Built with
       <span v-for="(link, index) in links" :key="link.name">
-        <span v-if="index !== links.length - 1">
+        <span class="prose" v-if="index !== links.length - 1">
           <a :href="link.path" target="_blank" rel="noreferrer" class="hover:underline" v-text="link.name"></a>,
         </span>
-        <span v-if="index === links.length - 1">
+        <span class="prose" v-if="index === links.length - 1">
           and <a :href="link.path" target="_blank" rel="noreferrer" class="hover:underline" v-text="link.name"></a>
         </span>
       </span>

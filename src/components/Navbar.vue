@@ -1,7 +1,7 @@
 <template>
   <nav class="inline-flex items-center space-x-2" role="navigation">
     <NavbarLink to="/projects" text="Projects" />
-    <span class="font-medium">/</span>
+    <span class="font-medium">&middot;</span>
     <NavbarLink to="/blog" text="Blog" />
   </nav>
 </template>

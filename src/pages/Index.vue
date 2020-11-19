@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <Title text="Mark" />
+    <Title text="Hello, I'm Mark" />
     <Content :content="content" />
     <Break />
     <div class="space-y-8">

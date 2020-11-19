@@ -1,5 +1,7 @@
 <template>
-  <g-link :to="to" class="font-medium underline hover:no-underline">{{ text }}</g-link>
+  <div class="prose">
+    <g-link :to="to" class="font-mono text-sm font-medium underline uppercase">{{ text }}</g-link>
+  </div>
 </template>
 
 <script>

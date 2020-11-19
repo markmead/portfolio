@@ -1,3 +1,3 @@
 <template>
-  <hr class="max-w-sm mx-auto border-gray-300" />
+  <hr class="h-2 max-w-sm mx-auto border-t-2 border-black" />
 </template>

@@ -1,5 +1,7 @@
-import 'typeface-inter'
 import '@/main.scss'
+
+import 'typeface-roboto-mono'
+import 'tailwindcss/tailwind.css'
 
 import DefaultLayout from '@/layouts/Default'
 
