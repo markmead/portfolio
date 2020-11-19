@@ -5,6 +5,7 @@ website: https://hypercolor.dev/
 description: A curated collection of beautiful premade gradients using default colors from the Tailwind palette as well as a selection of custom color gradients.
 path: hypercolor
 tech: ['Tailwind', 'Vue']
+show: true
 ---
 
 ## What is Hypercolor?

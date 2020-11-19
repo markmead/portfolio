@@ -28,7 +28,7 @@
 
 <page-query>
 query { 
-  projects: allProject(order: DESC, limit: 2) { 
+  projects: allProject(order: ASC, filter: { show: { eq: true } }, limit: 2) {
     edges {
       node { 
         title 
