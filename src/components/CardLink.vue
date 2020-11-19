@@ -8,7 +8,7 @@
         </p>
       </div>
       <div class="p-6 transition-colors bg-white group-hover:bg-green-300">
-        <h2 class="mt-2 text-xl font-semibold leading-tight">{{ title }}</h2>
+        <h2 class="mt-2 text-xl font-medium">{{ title }}</h2>
         <p class="mt-2 text-base text-gray-800">{{ summary }}</p>
       </div>
     </a>

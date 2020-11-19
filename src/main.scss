@@ -1,22 +1,4 @@
 .prose {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-semibold;
-  }
-
-  code {
-    @apply bg-gray-700 text-gray-200 py-1.5 px-3 rounded font-normal;
-
-    &:before,
-    &:after {
-      content: none;
-    }
-  }
-
   a {
     &:before {
       content: '';

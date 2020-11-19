@@ -15,6 +15,9 @@ module.exports = {
               textDecoration: 'none',
             },
           },
+          strong: {
+            fontWeight: theme('fontWeight.medium'),
+          },
         },
       },
     }),
