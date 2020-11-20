@@ -28,7 +28,9 @@ export default {
 
       if (window.innerWidth > 600) currentTime.dateStyle = 'short'
 
-      this.currentTime = `${currentTime.format()}`
+      currentTime = currentTime.format()
+
+      this.currentTime = currentTime.toString()
 
       localStorage.clear()
       localStorage.setItem('currentTime', currentTime)
