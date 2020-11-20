@@ -4,7 +4,7 @@
 
 .prose {
   a {
-    @apply relative;
+    @apply relative no-underline;
 
     &:before {
       content: '';
@@ -24,10 +24,6 @@
     h4,
     strong {
       @apply font-medium;
-    }
-
-    ul {
-      @apply list-inside;
     }
   }
 }
