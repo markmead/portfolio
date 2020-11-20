@@ -1,7 +1,5 @@
 <template>
-  <div class="prose">
-    <g-link :to="to" class="text-sm font-medium uppercase">{{ text }}</g-link>
-  </div>
+  <g-link :to="to" class="text-sm font-medium uppercase link">{{ text }}</g-link>
 </template>
 
 <script>

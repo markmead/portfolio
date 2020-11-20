@@ -2,28 +2,32 @@
   backdrop-filter: blur(5px);
 }
 
-.prose {
-  a {
-    @apply relative no-underline;
+.link {
+  @apply relative no-underline;
 
-    &:before {
-      content: '';
-      @apply bg-green-300 absolute inset-x-0 bottom-1 left-1 h-1 transition-all bg-opacity-75;
-    }
-
-    &:hover {
-      &:before {
-        @apply left-0 bottom-0 bg-opacity-100;
-      }
-    }
+  &:before {
+    content: '';
+    @apply bg-green-300 absolute inset-x-0 bottom-1 left-1 h-1 transition-all bg-opacity-75;
   }
 
+  &:hover {
+    &:before {
+      @apply left-0 bottom-0 bg-opacity-100;
+    }
+  }
+}
+
+.prose {
   &.markdown {
     h2,
     h3,
     h4,
     strong {
       @apply font-medium;
+    }
+
+    a {
+      @extend .link;
     }
   }
 }
