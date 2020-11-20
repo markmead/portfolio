@@ -13,35 +13,35 @@
       <div class="absolute bg-green-300 w-full h-full top-0.5 left-0.5"></div>
     </div>
     <Break />
-    <Content classes="mt-8" :content="$page.project.content" />
+    <Content :content="$page.project.content" />
   </Layout>
 </template>
 
 <page-query>
 query Project($path: String!) {
   project (path: $path) {
-    title
     brand
-    website
-    description
     content
+    description
     tech
+    title
+    website
   }
 }
 </page-query>
 
 <script>
-import Title from '@/components/Title'
+import Break from '@/components/Break'
 import Content from '@/components/Content'
 import Tech from '@/components/Tech'
-import Break from '@/components/Break'
+import Title from '@/components/Title'
 
 export default {
   components: {
-    Title,
+    Break,
     Content,
     Tech,
-    Break,
+    Title,
   },
   metaInfo() {
     return {

@@ -9,11 +9,7 @@ module.exports = {
         css: {
           color: theme('colors.gray.800'),
           a: {
-            position: 'relative',
             textDecoration: 'none',
-            '&:hover': {
-              textDecoration: 'none',
-            },
           },
           strong: {
             fontWeight: theme('fontWeight.medium'),

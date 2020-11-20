@@ -19,11 +19,11 @@
 <script>
 export default {
   props: {
-    to: String,
-    subtitle: String,
-    title: String,
-    summary: String,
     external: Boolean,
+    subtitle: String,
+    summary: String,
+    title: String,
+    to: String,
   },
 }
 </script>

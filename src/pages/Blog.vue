@@ -4,12 +4,12 @@
     <div class="space-y-8">
       <CardLink
         v-for="blog in blogs"
-        :key="blog.id"
-        :to="blog.url"
-        :subtitle="blog.readable_publish_date"
-        :title="blog.title"
         :external="true"
+        :key="blog.id"
+        :subtitle="blog.readable_publish_date"
         :summary="blog.description"
+        :title="blog.title"
+        :to="blog.url"
       />
     </div>
   </Layout>
@@ -18,13 +18,13 @@
 <script>
 import axios from 'axios'
 
-import Title from '@/components/Title'
 import CardLink from '@/components/CardLink'
+import Title from '@/components/Title'
 
 export default {
   components: {
-    Title,
     CardLink,
+    Title,
   },
   data() {
     return {

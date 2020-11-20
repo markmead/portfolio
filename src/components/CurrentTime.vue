@@ -21,16 +21,14 @@ export default {
   mounted() {
     setInterval(() => {
       let currentTime = new DateFormat(new Date(), {
-        lang: 'en',
         country: 'UK',
+        lang: 'en',
         timeStyle: 'short',
       })
 
       if (window.innerWidth > 600) currentTime.dateStyle = 'short'
 
-      currentTime = `${currentTime.format()}`
-
-      this.currentTime = currentTime
+      this.currentTime = `${currentTime.format()}`
 
       localStorage.clear()
       localStorage.setItem('currentTime', currentTime)

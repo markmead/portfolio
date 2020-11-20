@@ -6,21 +6,21 @@
     <div class="space-y-8">
       <CardLink
         v-for="project in $page.projects.edges"
-        :key="project.node.title"
-        :to="project.node.path"
-        :subtitle="project.node.brand"
-        :title="project.node.title"
-        :summary="project.node.description"
         :external="false"
+        :key="project.node.title"
+        :subtitle="project.node.brand"
+        :summary="project.node.description"
+        :title="project.node.title"
+        :to="project.node.path"
       />
       <CardLink
         v-for="blog in this.blogs"
-        :key="blog.id"
-        :to="blog.url"
-        :subtitle="blog.readable_publish_date"
-        :title="blog.title"
-        :summary="blog.description"
         :external="true"
+        :key="blog.id"
+        :subtitle="blog.readable_publish_date"
+        :summary="blog.description"
+        :title="blog.title"
+        :to="blog.url"
       />
     </div>
   </Layout>
@@ -31,10 +31,10 @@ query {
   projects: allProject(order: ASC, filter: { show: { eq: true } }, limit: 2) {
     edges {
       node { 
-        title 
         brand 
         description 
         path 
+        title 
       } 
     } 
   } 
@@ -44,10 +44,10 @@ query {
 <script>
 import axios from 'axios'
 
-import Title from '@/components/Title'
-import Content from '@/components/Content'
-import CardLink from '@/components/CardLink'
 import Break from '@/components/Break'
+import CardLink from '@/components/CardLink'
+import Content from '@/components/Content'
+import Title from '@/components/Title'
 
 export default {
   data() {
@@ -56,10 +56,10 @@ export default {
     }
   },
   components: {
-    Title,
-    Content,
-    CardLink,
     Break,
+    CardLink,
+    Content,
+    Title,
   },
   async beforeMount() {
     await axios.get('https://dev.to/api/articles?username=markmead').then((res) => {
