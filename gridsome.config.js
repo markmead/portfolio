@@ -39,11 +39,11 @@ module.exports = {
       },
     },
   ],
-  css: {
-    loaderOptions: {
-      postcss: {
-        plugins: [require('tailwindcss')],
-      },
-    },
-  },
+  // css: {
+  //   loaderOptions: {
+  //     postcss: {
+  //       plugins: [require('tailwindcss')],
+  //     },
+  //   },
+  // },
 }
