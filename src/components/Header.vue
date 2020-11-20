@@ -12,14 +12,14 @@
 
 <script>
 import CurrentTime from '@/components/CurrentTime'
-import Navbar from '@/components/Navbar'
 import Logo from '@/components/Logo'
+import Navbar from '@/components/Navbar'
 
 export default {
   components: {
     CurrentTime,
-    Navbar,
     Logo,
+    Navbar,
   },
 }
 </script>

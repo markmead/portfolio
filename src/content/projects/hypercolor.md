@@ -1,11 +1,11 @@
 ---
-title: Beautiful CSS Gradients Created with Tailwind
 brand: Hypercolor
-website: https://hypercolor.dev/
 description: A curated collection of beautiful premade gradients using default colors from the Tailwind palette as well as a selection of custom color gradients.
 path: hypercolor
-tech: ['Tailwind', 'Vue']
 show: true
+tech: ['Tailwind', 'Vue']
+title: Beautiful CSS Gradients Created with Tailwind
+website: https://hypercolor.dev/
 ---
 
 ## What is Hypercolor?

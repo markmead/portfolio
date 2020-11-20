@@ -9,13 +9,16 @@
 </template>
 
 <script>
-import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import Header from '@/components/Header'
 
 export default {
   components: {
-    Header,
     Footer,
+    Header,
+  },
+  mounted() {
+    this.$externalLinks()
   },
 }
 </script>

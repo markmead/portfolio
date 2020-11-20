@@ -5,11 +5,10 @@
       <CardLink
         v-for="project in $page.projects.edges"
         :key="project.node.id"
-        :to="project.node.path"
         :subtitle="project.node.brand"
-        :title="project.node.title"
         :summary="project.node.description"
-        :external="false"
+        :title="project.node.title"
+        :to="project.node.path"
       />
     </div>
   </Layout>
@@ -20,10 +19,10 @@ query {
   projects: allProject(order: ASC, filter: { show: { eq: true } }) {
     edges {
       node { 
-        title 
         brand 
         description 
         path
+        title 
       } 
     } 
   } 
@@ -31,13 +30,13 @@ query {
 </page-query>
 
 <script>
-import Title from '@/components/Title'
 import CardLink from '@/components/CardLink'
+import Title from '@/components/Title'
 
 export default {
   components: {
-    Title,
     CardLink,
+    Title,
   },
   metaInfo: {
     title: 'Development Projects',
