@@ -4,7 +4,6 @@
     <div class="space-y-8">
       <CardLink
         v-for="project in $page.projects.edges"
-        :external="false"
         :key="project.node.id"
         :subtitle="project.node.brand"
         :summary="project.node.description"

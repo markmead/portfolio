@@ -3,12 +3,8 @@
     <p class="text-sm font-medium">
       Built with
       <span v-for="(link, index) in links" :key="link.name">
-        <span v-if="index !== links.length - 1">
-          <a :href="link.path" class="link" target="_blank" rel="noreferrer" v-text="link.name"></a>,
-        </span>
-        <span v-if="index === links.length - 1">
-          and <a :href="link.path" class="link" target="_blank" rel="noreferrer" v-text="link.name"></a>
-        </span>
+        <span v-if="index !== links.length - 1"> <a :href="link.path" class="link" v-text="link.name"></a>, </span>
+        <span v-if="index === links.length - 1"> and <a :href="link.path" class="link" v-text="link.name"></a> </span>
       </span>
     </p>
   </footer>

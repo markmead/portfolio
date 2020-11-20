@@ -1,9 +1,9 @@
 <template>
   <div class="relative group">
-    <a :href="to" :target="external ? '_blank' : '_self'" class="relative z-10 block font-medium border-2 border-black">
+    <a :href="to" class="relative z-10 block font-medium border-2 border-black">
       <div class="flex items-center justify-between p-6 uppercase bg-black">
         <p class="text-sm text-green-300">{{ subtitle }}</p>
-        <span class="text-xs bg-white px-2.5 py-1" v-if="external">
+        <span class="text-xs bg-white px-2.5 py-1" v-if="blog">
           DEV.to
         </span>
       </div>
@@ -19,11 +19,14 @@
 <script>
 export default {
   props: {
-    external: Boolean,
+    blog: Boolean,
     subtitle: String,
     summary: String,
     title: String,
     to: String,
+  },
+  mounted() {
+    this.$externalLinks()
   },
 }
 </script>

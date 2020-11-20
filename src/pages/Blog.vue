@@ -5,7 +5,7 @@
       <template v-if="blogs">
         <CardLink
           v-for="blog in blogs"
-          :external="true"
+          :blog="true"
           :key="blog.id"
           :subtitle="blog.readable_publish_date"
           :summary="blog.description"

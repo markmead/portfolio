@@ -6,7 +6,6 @@
     <div class="space-y-8">
       <CardLink
         v-for="project in $page.projects.edges"
-        :external="false"
         :key="project.node.title"
         :subtitle="project.node.brand"
         :summary="project.node.description"
@@ -15,7 +14,7 @@
       />
       <CardLink
         v-for="blog in this.blogs"
-        :external="true"
+        :blog="true"
         :key="blog.id"
         :subtitle="blog.readable_publish_date"
         :summary="blog.description"
