@@ -2,15 +2,20 @@
   <Layout>
     <Title text="Blogs" />
     <div class="space-y-8">
-      <CardLink
-        v-for="blog in blogs"
-        :external="true"
-        :key="blog.id"
-        :subtitle="blog.readable_publish_date"
-        :summary="blog.description"
-        :title="blog.title"
-        :to="blog.url"
-      />
+      <template v-if="blogs">
+        <CardLink
+          v-for="blog in blogs"
+          :external="true"
+          :key="blog.id"
+          :subtitle="blog.readable_publish_date"
+          :summary="blog.description"
+          :title="blog.title"
+          :to="blog.url"
+        />
+      </template>
+      <template v-else>
+        <div class="min-h-screen"></div>
+      </template>
     </div>
   </Layout>
 </template>
