@@ -7,7 +7,7 @@
 
   &:before {
     content: '';
-    @apply bg-green-300 absolute inset-x-0 bottom-1 left-1 h-1 transition-all bg-opacity-75;
+    @apply bg-green-300 absolute w-full bottom-1 left-1 h-1 transition-all bg-opacity-75;
   }
 
   &:hover {
