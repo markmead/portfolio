@@ -29,5 +29,14 @@
     a {
       @extend .link;
     }
+
+    code {
+      &:before,
+      &:after {
+        content: none;
+      }
+
+      @apply bg-gray-200 rounded-md px-2.5 py-1;
+    }
   }
 }

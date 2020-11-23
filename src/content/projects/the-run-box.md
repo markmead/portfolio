@@ -3,7 +3,7 @@ brand: The Run Box
 description: The Run Box is a subscription box for runners, where every three months you recieve a collection of products built around your passion for running.
 path: the-run-box
 show: true
-tech: ['Ruby on Rails', 'Alpine', 'Tailwind', 'Devise', 'Spina', 'RSpec', 'Stripe', 'Redis']
+tech: ['Ruby on Rails', 'Alpine', 'Tailwind', 'Devise', 'Spina', 'RSpec', 'Stripe', 'Redis', 'Adobe XD', 'AWS']
 title: The Best Subscription Box for Runners
 website: https://www.therunbox.co.uk/
 ---
