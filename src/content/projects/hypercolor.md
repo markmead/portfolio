@@ -19,6 +19,6 @@ Hypercolor is a showcase of beautiful premade gradients using default colors fro
 
 ## Author Credits
 
-Hypercolor was created by [Jordi Hales](https://twitter.com/consolelogjordi) a Laravel developer who I use to work with, and [Mark Mead (me)](https://twitter.com/itsmarkmead).
+Hypercolor was created by [Jordi Hales](https://twitter.com/consolelogjordi) a Laravel developer and [Mark Mead (me)](https://twitter.com/itsmarkmead).
 
 The idea would not have been possible without [Tailwind](https://tailwindcss.com/).

@@ -13,9 +13,7 @@
           :to="blog.url"
         />
       </template>
-      <template v-else>
-        <div class="min-h-screen"></div>
-      </template>
+      <div v-else class="min-h-screen"></div>
     </div>
   </Layout>
 </template>

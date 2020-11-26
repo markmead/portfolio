@@ -3,8 +3,8 @@ export default function ExternalLinks() {
 
   for (let link of links) {
     if (link.hostname !== window.location.hostname) {
-      link.target = '_blank'
       link.rel = 'noreferrer'
+      link.target = '_blank'
     }
   }
 }
