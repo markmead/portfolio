@@ -2,9 +2,13 @@
   <footer class="px-5 py-2.5 bg-white">
     <p class="text-sm font-medium">
       Built with
-      <span v-for="(link, index) in links" :key="link.name">
-        <span v-if="index !== links.length - 1"> <a :href="link.path" class="link" v-text="link.name"></a>, </span>
-        <span v-if="index === links.length - 1"> and <a :href="link.path" class="link" v-text="link.name"></a> </span>
+      <span class="inline-flex items-center space-x-2">
+        <span v-for="(link, index) in links" :key="link.name">
+          <span v-if="index !== 0">&middot;</span>
+          <a :href="link.path" class="link">
+            {{ link.name }}
+          </a>
+        </span>
       </span>
     </p>
   </footer>
