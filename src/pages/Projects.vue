@@ -16,13 +16,13 @@
 
 <page-query>
 query { 
-  projects: allProject(order: ASC, filter: { show: { eq: true } }) {
+  projects: allProject(sort: [{ by: "featured" }, { by: "brand" }], filter: { show: { eq: true } }) {
     edges {
       node { 
-        brand 
-        description 
+        brand
+        description
         path
-        title 
+        title
       } 
     } 
   } 

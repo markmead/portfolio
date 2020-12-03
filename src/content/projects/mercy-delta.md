@@ -1,21 +1,22 @@
 ---
 brand: Mercy Delta
 description: Iconic prints from an independent luxury brand, producing small sustainable collections that suit every woman, and can be worn year after year.
+featured: true
 path: mercy-delta
 show: true
 tech:
   [
-    'Ruby on Rails',
-    'Tailwind',
-    'Stripe',
-    'Redis',
     'Adobe XD',
     'AWS',
     'Heroku',
-    'Stimulus',
-    'Solidus',
     'Klarna',
     'Postgres',
+    'Redis',
+    'Ruby on Rails',
+    'Solidus',
+    'Stimulus',
+    'Stripe',
+    'Tailwind',
   ]
 title: Statement Prints from Day to Night
 website: https://www.therunbox.co.uk/

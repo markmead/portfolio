@@ -27,7 +27,7 @@
 
 <page-query>
 query { 
-  projects: allProject(order: ASC, filter: { show: { eq: true } }, limit: 2) {
+  projects: allProject(filter: { featured: { eq: true }}) {
     edges {
       node { 
         brand 
@@ -54,16 +54,16 @@ export default {
       blogs: null,
     }
   },
+  async beforeMount() {
+    await axios.get('https://dev.to/api/articles?username=markmead').then((res) => {
+      this.blogs = res.data.slice(0, 2)
+    })
+  },
   components: {
     Break,
     CardLink,
     Content,
     Title,
-  },
-  async beforeMount() {
-    await axios.get('https://dev.to/api/articles?username=markmead').then((res) => {
-      this.blogs = res.data.slice(0, 2)
-    })
   },
   metaInfo: {
     title: 'Ruby on Rails Developer',

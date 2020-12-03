@@ -25,10 +25,6 @@ import CardLink from '@/components/CardLink'
 import Title from '@/components/Title'
 
 export default {
-  components: {
-    CardLink,
-    Title,
-  },
   data() {
     return {
       blogs: null,
@@ -38,6 +34,10 @@ export default {
     await axios.get('https://dev.to/api/articles?username=markmead').then((res) => {
       this.blogs = res.data
     })
+  },
+  components: {
+    CardLink,
+    Title,
   },
   metaInfo: {
     title: 'Development Blogs',

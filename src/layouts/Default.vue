@@ -13,12 +13,12 @@ import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 
 export default {
+  mounted() {
+    this.$externalLinks()
+  },
   components: {
     Footer,
     Header,
-  },
-  mounted() {
-    this.$externalLinks()
   },
 }
 </script>

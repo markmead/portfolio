@@ -1,6 +1,7 @@
 ---
 brand: Sportify
 description: Add your photo, name and choose your stats. Hundreds of designs to choose from.
+featured: true
 path: sportify
 show: true
 tech: ['Shopify', 'Tailwind', 'Alpine', 'Adobe XD']

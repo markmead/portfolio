@@ -21,7 +21,6 @@ query Project($path: String!) {
   project (path: $path) {
     brand
     content
-    description
     tech
     title
     website
@@ -36,12 +35,6 @@ import Tech from '@/components/Tech'
 import Title from '@/components/Title'
 
 export default {
-  components: {
-    Break,
-    Content,
-    Tech,
-    Title,
-  },
   metaInfo() {
     return {
       title: this.$page.project.title,
@@ -52,6 +45,12 @@ export default {
         },
       ],
     }
+  },
+  components: {
+    Break,
+    Content,
+    Tech,
+    Title,
   },
 }
 </script>
