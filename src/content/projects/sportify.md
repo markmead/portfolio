@@ -14,6 +14,6 @@ Sportify is an eCommerce store that allows customers to create personalised spor
 
 ## How Does it Work?
 
-The website is built on Shopify, and uses their `properties` form elements to pass the custom attributes through. The live preview is handled with AlpineJS, and is styled with TailwindCSS.
+The website is built on Shopify, and uses their `properties` form elements to pass the custom attributes through. The live preview is handled with Alpine, and is styled with Tailwind.
 
 As it's Shopify, there's a lot of control that's accessible for the client. Therefore, we had to make the code easy to read and easy to maintain.

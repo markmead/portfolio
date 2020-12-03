@@ -3,7 +3,7 @@ brand: Scott Sheen & Partners
 description: A family run, independent Estate Agent with over forty years’ experience within the industry. Scott Sheen & Partners specialise in all aspects of Sale and Letting of Residential property locally in North Essex.
 path: scott-sheen
 show: true
-tech: ['Ruby on Rails', 'Alpine', 'Tailwind', 'Alto', 'Stimulus', 'Heroku', 'AWS', 'Adobe XD']
+tech: ['Ruby on Rails', 'Alpine', 'Tailwind', 'Alto', 'Stimulus', 'Heroku', 'AWS', 'Adobe XD', 'Spina', 'Postgres']
 title: Leading Estate Agency in the Tendring Area
 website: https://www.scottsheenandpartners.co.uk/
 ---
@@ -18,4 +18,4 @@ The properies are managed on Alto, a property management tool that exposes prope
 
 We've used an open source API wrapper for Alto that we've updated and are now managing through a GitHub fork. This API wrapper (Vebra) allows the XML to be easily converted into database records, this makes them much easier to work with in Rails, and allows easy `ActiveRecord` queries.
 
-The content of the site is managed with SpinaCMS, and the frontend is built with AlpineJS and TailwindCSS.
+The content of the site is managed with Spina, and the frontend is built with Alpine and Tailwind.
