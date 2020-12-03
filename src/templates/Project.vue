@@ -3,11 +3,10 @@
     <Tech :tech="$page.project.tech" />
     <div class="relative inline-flex group">
       <a
-        :href="$page.project.website"
         class="inline-flex bg-white relative z-10 px-5 py-2.5 border-2 border-black group-hover:bg-black group-hover:text-green-300 transition-colors"
-      >
-        View Website
-      </a>
+        v-text="'View Website'"
+        :href="$page.project.website"
+      />
       <div class="absolute bg-green-300 w-full h-full top-0.5 left-0.5"></div>
     </div>
     <Break />

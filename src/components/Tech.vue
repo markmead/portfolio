@@ -1,12 +1,11 @@
 <template>
   <div class="flex flex-wrap -m-1">
     <span
-      class="inline-flex items-center px-3 py-2 m-1 text-xs text-green-300 bg-black"
       v-for="tech in sortedTech"
+      v-text="tech"
       :key="tech"
-    >
-      {{ tech }}
-    </span>
+      class="inline-flex items-center px-3 py-2 m-1 text-xs text-green-300 bg-black"
+    />
   </div>
 </template>
 

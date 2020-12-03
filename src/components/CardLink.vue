@@ -2,13 +2,11 @@
   <div class="relative group">
     <a :href="to" class="relative z-10 block border-2 border-black">
       <div class="flex items-center justify-between p-6 font-medium uppercase bg-black">
-        <p class="text-sm text-green-300">{{ subtitle }}</p>
-        <span class="text-xs bg-white px-2.5 py-1" v-if="blog">
-          DEV.to
-        </span>
+        <p class="text-sm text-green-300" v-text="subtitle" />
+        <span class="text-xs bg-white px-2.5 py-1" v-text="'DEV.to'" v-if="blog" />
       </div>
       <div class="p-6 transition-colors bg-white group-hover:bg-green-300">
-        <h2 class="text-xl font-medium">{{ title }}</h2>
+        <h2 class="text-xl font-medium" v-text="title" />
         <div class="mt-2 prose">
           <p>{{ summary }}</p>
         </div>

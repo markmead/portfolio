@@ -5,9 +5,7 @@
       <span class="inline-flex items-center space-x-2">
         <span v-for="(link, index) in links" :key="link.name">
           <span v-if="index !== 0">&middot;</span>
-          <a :href="link.path" class="link">
-            {{ link.name }}
-          </a>
+          <a class="link" v-text="link.name" :href="link.path" />
         </span>
       </span>
     </p>

@@ -1,7 +1,5 @@
 <template>
-  <span class="inline-flex items-center px-3 py-2 text-xs text-green-300 bg-black">
-    {{ currentTime }}
-  </span>
+  <span class="inline-flex items-center px-3 py-2 text-xs text-green-300 bg-black" v-text="currentTime" />
 </template>
 
 <script>
