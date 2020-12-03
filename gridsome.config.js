@@ -15,7 +15,7 @@ module.exports = {
     {
       use: 'gridsome-plugin-manifest',
       options: {
-        background_color: '#FFF',
+        background_color: '#1eebb3',
         icon_path: './src/favicon.png',
         name: 'Mark Mead Portfolio',
         short_name: 'Mark Mead',

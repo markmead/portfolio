@@ -10,7 +10,7 @@ website: https://sportifycards.com/
 
 ## What is Sportify?
 
-Sportify is an eCommerce store that allows customers to create personalised sports cards.
+Sportify is an eCommerce store that allows customers to create personalised sports cards with a live preview editor.
 
 ## How Does it Work?
 
