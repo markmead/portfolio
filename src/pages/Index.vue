@@ -1,6 +1,5 @@
 <template>
-  <Layout>
-    <Title text="Hello, I'm Mark" />
+  <Layout title="Hello, I'm Mark">
     <Content content="<p>23 year old web developer, finding solutions with Vue, Shopify &amp; Ruby on Rails.</p>" />
     <Break />
     <div class="space-y-8">
@@ -46,7 +45,6 @@ import axios from 'axios'
 import Break from '@/components/Break'
 import CardLink from '@/components/CardLink'
 import Content from '@/components/Content'
-import Title from '@/components/Title'
 
 export default {
   data() {
@@ -63,7 +61,6 @@ export default {
     Break,
     CardLink,
     Content,
-    Title,
   },
   metaInfo: {
     title: 'Ruby on Rails Developer',

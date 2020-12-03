@@ -1,6 +1,5 @@
 <template>
-  <Layout>
-    <Title :text="$page.project.title" />
+  <Layout :title="$page.project.title">
     <Tech :tech="$page.project.tech" />
     <div class="relative inline-flex group">
       <a
@@ -32,7 +31,6 @@ query Project($path: String!) {
 import Break from '@/components/Break'
 import Content from '@/components/Content'
 import Tech from '@/components/Tech'
-import Title from '@/components/Title'
 
 export default {
   metaInfo() {
@@ -50,7 +48,6 @@ export default {
     Break,
     Content,
     Tech,
-    Title,
   },
 }
 </script>

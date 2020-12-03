@@ -1,6 +1,5 @@
 <template>
-  <Layout>
-    <Title text="Blogs" />
+  <Layout title="Blogs">
     <div class="space-y-8">
       <template v-if="blogs">
         <CardLink
@@ -22,7 +21,6 @@
 import axios from 'axios'
 
 import CardLink from '@/components/CardLink'
-import Title from '@/components/Title'
 
 export default {
   data() {
@@ -37,7 +35,6 @@ export default {
   },
   components: {
     CardLink,
-    Title,
   },
   metaInfo: {
     title: 'Development Blogs',

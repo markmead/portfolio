@@ -1,6 +1,5 @@
 <template>
-  <Layout>
-    <Title text="Projects" />
+  <Layout title="Projects">
     <div class="space-y-8">
       <CardLink
         v-for="project in $page.projects.edges"
@@ -31,12 +30,10 @@ query {
 
 <script>
 import CardLink from '@/components/CardLink'
-import Title from '@/components/Title'
 
 export default {
   components: {
     CardLink,
-    Title,
   },
   metaInfo: {
     title: 'Development Projects',
