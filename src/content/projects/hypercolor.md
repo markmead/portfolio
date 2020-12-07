@@ -4,6 +4,7 @@ description: A curated collection of beautiful premade gradients using default c
 featured: false
 path: hypercolor
 show: true
+side: true
 tech: ['Tailwind', 'Vue']
 title: Beautiful CSS Gradients Created with Tailwind
 website: https://hypercolor.dev/

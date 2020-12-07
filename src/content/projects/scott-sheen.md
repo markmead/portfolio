@@ -4,7 +4,8 @@ description: A family run, independent Estate Agent with over forty years’ exp
 featured: false
 path: scott-sheen
 show: true
-tech: ['Ruby on Rails', 'Alpine', 'Tailwind', 'Alto', 'Stimulus', 'Heroku', 'AWS', 'Adobe XD', 'Spina', 'Postgres']
+side: false
+tech: ['Adobe XD', 'Alpine', 'Alto', 'AWS', 'Heroku', 'Postgres', 'Ruby on Rails', 'Spina', 'Stimulus', 'Tailwind']
 title: Leading Estate Agency in the Tendring Area
 website: https://www.scottsheenandpartners.co.uk/
 ---

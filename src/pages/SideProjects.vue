@@ -1,6 +1,6 @@
 <template>
-  <Layout title="Projects">
-    <Button text="View Side Projects" to="/side-projects" />
+  <Layout title="Side Projects">
+    <Button text="View Projects" to="/projects" />
     <div class="space-y-8">
       <CardLink
         v-for="project in $page.projects.edges"
@@ -16,7 +16,7 @@
 
 <page-query>
 query { 
-  projects: allProject(sort: [{ by: "featured" }, { by: "brand" }], filter: { show: { eq: true }, side: { eq: false } }) {
+  projects: allProject(sort: [{ by: "featured" }, { by: "title" }], filter: { show: { eq: true }, side: { eq: true } }) {
     edges {
       node { 
         brand
@@ -39,11 +39,11 @@ export default {
     CardLink,
   },
   metaInfo: {
-    title: 'Projects',
+    title: 'Side Projects',
     meta: [
       {
         name: 'description',
-        content: 'Projects that I have worked on featuring Ruby on Rails, Vue, Shopify and more.',
+        content: 'Side projects that I have worked on featuring a range of technologies.',
       },
     ],
   },

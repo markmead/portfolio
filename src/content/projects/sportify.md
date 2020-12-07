@@ -4,7 +4,8 @@ description: Add your photo, name and choose your stats. Hundreds of designs to 
 featured: true
 path: sportify
 show: true
-tech: ['Shopify', 'Tailwind', 'Alpine', 'Adobe XD']
+side: false
+tech: ['Adobe XD', 'Alpine', 'Shopify', 'Tailwind']
 title: The Ultimate Personalised Gift for Sports Fans
 website: https://sportifycards.com/
 ---

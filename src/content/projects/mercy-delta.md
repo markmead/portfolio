@@ -4,6 +4,7 @@ description: Iconic prints from an independent luxury brand, producing small sus
 featured: true
 path: mercy-delta
 show: true
+side: false
 tech:
   [
     'Adobe XD',
@@ -19,7 +20,7 @@ tech:
     'Tailwind',
   ]
 title: Statement Prints from Day to Night
-website: https://www.therunbox.co.uk/
+website: https://www.mercydelta.com/
 ---
 
 ## What is Mercy Delta?

@@ -4,6 +4,7 @@ description: The Run Box is a subscription box for runners, where every three mo
 featured: false
 path: the-run-box
 show: true
+side: false
 tech:
   [
     'Adobe XD',
