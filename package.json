@@ -13,7 +13,7 @@
     "@gridsome/transformer-remark": "^0.6.0",
     "@tailwindcss/typography": "tailwindcss/typography",
     "autoprefixer": "^9",
-    "axios": "^0.21.0",
+    "axios": "^0.21.1",
     "gridsome": "^0.7.0",
     "kbdays": "^1.0.1",
     "postcss": "^7",
