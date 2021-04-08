@@ -1,6 +1,6 @@
 <template>
   <Layout :title="$page.project.title">
-    <div class="max-w-3xl px-4 mx-auto space-y-16">
+    <div class="space-y-16">
       <Tech :tech="$page.project.tech" />
       <Content :content="$page.project.content" />
     </div>

@@ -1,6 +1,6 @@
 <template>
   <Layout title="Projects">
-    <div class="max-w-3xl px-4 mx-auto space-y-16">
+    <div class="space-y-16">
       <LinkGroup :edges="$page.projects.edges" />
     </div>
   </Layout>

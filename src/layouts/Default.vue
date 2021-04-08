@@ -2,8 +2,10 @@
   <div>
     <Header />
     <main role="main">
-      <Hero :title="title" :text="text" />
-      <slot />
+      <div class="max-w-3xl px-4 mx-auto">
+        <Hero :title="title" :text="text" />
+        <slot />
+      </div>
     </main>
     <Footer />
   </div>

@@ -1,6 +1,6 @@
 <template>
   <header role="banner">
-    <div class="max-w-3xl px-4 py-16 mx-auto">
+    <div class="py-16">
       <Title :text="title" />
       <Subtitle :text="text" v-if="text" />
     </div>

@@ -20,12 +20,10 @@
 </template>
 
 <script>
-import Logo from '@/components/Logo'
 import Navbar from '@/components/Navbar'
 
 export default {
   components: {
-    Logo,
     Navbar,
   },
 }
