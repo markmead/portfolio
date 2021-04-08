@@ -1,9 +1,9 @@
 <template>
   <Layout :title="$page.project.title">
-    <Tech :tech="$page.project.tech" />
-    <Button text="View Website" :to="$page.project.website" />
-    <Break />
-    <Content :content="$page.project.content" />
+    <div class="max-w-3xl px-4 mx-auto space-y-16">
+      <Tech :tech="$page.project.tech" />
+      <Content :content="$page.project.content" />
+    </div>
   </Layout>
 </template>
 
@@ -20,8 +20,6 @@ query Project($path: String!) {
 </page-query>
 
 <script>
-import Button from '@/components/Button'
-import Break from '@/components/Break'
 import Content from '@/components/Content'
 import Tech from '@/components/Tech'
 
@@ -38,8 +36,6 @@ export default {
     }
   },
   components: {
-    Button,
-    Break,
     Content,
     Tech,
   },

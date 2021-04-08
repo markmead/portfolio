@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "mead.im",
   "private": true,
   "scripts": {
     "build": "gridsome build",
@@ -12,18 +12,17 @@
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.0",
     "@tailwindcss/typography": "tailwindcss/typography",
-    "autoprefixer": "^9",
-    "axios": "^0.21.0",
-    "gridsome": "^0.7.0",
-    "kbdays": "^1.0.1",
-    "postcss": "^7",
-    "tailwindcss": "^2.0.1-compat",
-    "typeface-roboto-mono": "^1.1.13"
+    "gridsome": "^0.7.0"
   },
   "devDependencies": {
+    "@fontsource/inter": "^4.2.2",
+    "@tailwindcss/postcss7-compat": "^2.1.0",
+    "autoprefixer": "^9",
     "gridsome-plugin-manifest": "^0.3.5",
     "gridsome-plugin-service-worker": "^0.2.6",
     "node-sass": "^5.0.0",
-    "sass-loader": "^10.1.0"
+    "postcss": "^7",
+    "sass-loader": "^10.1.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }
 }

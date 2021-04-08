@@ -1,5 +1,5 @@
 <template>
-  <g-link class="text-sm font-medium uppercase link" v-text="text" :to="to" />
+  <g-link class="px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-gray-600" :to="to">{{ text }}</g-link>
 </template>
 
 <script>

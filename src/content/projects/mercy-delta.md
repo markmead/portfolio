@@ -1,10 +1,7 @@
 ---
 brand: Mercy Delta
 description: Iconic prints from an independent luxury brand, producing small sustainable collections that suit every woman, and can be worn year after year.
-featured: true
 path: mercy-delta
-show: true
-side: false
 tech:
   [
     'Adobe XD',

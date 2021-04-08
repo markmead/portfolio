@@ -1,66 +1,35 @@
 <template>
-  <Layout title="Hello, I'm Mark">
-    <Content content="<p>23 year old web developer, finding solutions with Vue, Shopify &amp; Ruby on Rails.</p>" />
-    <Break />
-    <div class="space-y-8">
-      <CardLink
-        v-for="project in $page.projects.edges"
-        :key="project.node.title"
-        :subtitle="project.node.brand"
-        :summary="project.node.description"
-        :title="project.node.title"
-        :to="project.node.path"
-      />
-      <CardLink
-        v-for="blog in this.blogs"
-        :blog="true"
-        :key="blog.id"
-        :subtitle="blog.readable_publish_date"
-        :summary="blog.description"
-        :title="blog.title"
-        :to="blog.url"
-      />
+  <Layout
+    title="Hey, I'm Mark"
+    text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis asperiores enim in, beatae pariatur minus tenetur fugiat. Optio, culpa! Saepe temporibus, nihil facilis aperiam earum facere ipsam. Illum, eos itaque?"
+  >
+    <div class="max-w-3xl px-4 mx-auto space-y-16">
+      <LinkGroup title="Projects" :edges="$page.projects.edges" />
     </div>
   </Layout>
 </template>
 
 <page-query>
-query { 
-  projects: allProject(filter: { featured: { eq: true }}) {
+query {
+  projects: allProject(limit: 3) {
     edges {
-      node { 
-        brand 
-        description 
-        path 
-        title 
-      } 
-    } 
-  } 
+      node {
+        brand
+        description
+        path
+        title
+      }
+    }
+  }
 }
 </page-query>
 
 <script>
-import axios from 'axios'
-
-import Break from '@/components/Break'
-import CardLink from '@/components/CardLink'
-import Content from '@/components/Content'
+import LinkGroup from '@/components/LinkGroup'
 
 export default {
-  data() {
-    return {
-      blogs: null,
-    }
-  },
-  async beforeMount() {
-    await axios.get('https://dev.to/api/articles?username=markmead').then((res) => {
-      this.blogs = res.data.slice(0, 2)
-    })
-  },
   components: {
-    Break,
-    CardLink,
-    Content,
+    LinkGroup,
   },
   metaInfo: {
     title: 'Ruby on Rails Developer',

@@ -1,10 +1,7 @@
 ---
 brand: The Run Box
 description: The Run Box is a subscription box for runners, where every three months you recieve a collection of products built around your passion for running.
-featured: false
 path: the-run-box
-show: true
-side: false
 tech:
   [
     'Adobe XD',

@@ -1,10 +1,7 @@
 ---
 brand: Sportify
 description: Add your photo, name and choose your stats. Hundreds of designs to choose from.
-featured: true
 path: sportify
-show: true
-side: false
 tech: ['Adobe XD', 'Alpine', 'Shopify', 'Tailwind']
 title: The Ultimate Personalised Gift for Sports Fans
 website: https://sportifycards.com/

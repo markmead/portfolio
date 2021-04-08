@@ -1,5 +1,5 @@
 <template>
-  <div class="prose sm:prose-lg markdown" v-html="content"></div>
+  <div class="prose max-w-none" v-html="content"></div>
 </template>
 
 <script>

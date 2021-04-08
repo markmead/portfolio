@@ -1,8 +1,8 @@
 <template>
-  <div class="font-mono bg-gray-50">
+  <div>
     <Header />
-    <main class="max-w-2xl px-4 py-12 mx-auto space-y-8">
-      <Title :text="title" />
+    <main role="main">
+      <Hero :title="title" :text="text" />
       <slot />
     </main>
     <Footer />
@@ -12,19 +12,17 @@
 <script>
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
-import Title from '@/components/Title'
+import Hero from '@/components/Hero'
 
 export default {
-  mounted() {
-    this.$externalLinks()
-  },
   components: {
     Footer,
     Header,
-    Title,
+    Hero,
   },
   props: {
     title: String,
+    text: String,
   },
 }
 </script>

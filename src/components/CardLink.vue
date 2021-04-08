@@ -1,32 +1,18 @@
 <template>
-  <div class="relative group">
-    <a :href="to" class="relative z-10 block border-2 border-black">
-      <div class="flex items-center justify-between p-6 font-medium uppercase bg-black">
-        <p class="text-sm text-green-300" v-text="subtitle" />
-        <span class="text-xs bg-white px-2.5 py-1" v-text="'DEV.to'" v-if="blog" />
-      </div>
-      <div class="p-6 transition-colors bg-white group-hover:bg-green-300">
-        <h2 class="text-xl font-medium" v-text="title" />
-        <div class="mt-2 prose">
-          <p>{{ summary }}</p>
-        </div>
-      </div>
-    </a>
-    <div class="absolute bg-green-300 w-full h-full top-0.5 left-0.5"></div>
-  </div>
+  <g-link class="block py-5 hover:opacity-75" :to="to">
+    <h2 class="text-xl font-medium">{{ title }}</h2>
+    <p class="mt-2 text-gray-500">
+      {{ text }}
+    </p>
+  </g-link>
 </template>
 
 <script>
 export default {
   props: {
-    blog: Boolean,
-    subtitle: String,
-    summary: String,
+    text: String,
     title: String,
     to: String,
-  },
-  mounted() {
-    this.$externalLinks()
   },
 }
 </script>

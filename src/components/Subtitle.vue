@@ -1,5 +1,7 @@
 <template>
-  <h1 class="text-4xl font-bold">{{ text }}</h1>
+  <p class="mt-4 text-xl text-gray-500">
+    {{ text }}
+  </p>
 </template>
 
 <script>
