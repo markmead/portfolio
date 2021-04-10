@@ -5,7 +5,7 @@ description: Use the new Tailwind JIT mode in your Rails 6 project with live rel
 path: how-to-setup-tailwind-jit-in-rails-6-with-live-reload
 
 ---
-[**I have created a GitHub README following this guide**](https://github.com/markmead/tailwind-jit-rails-live-reload "Tailwind JIT, Rails 6 and live reload GitHub repository")
+[**I have created a GitHub repo following this guide**](https://github.com/markmead/tailwind-jit-rails-live-reload "Tailwind JIT, Rails 6 and live reload GitHub repository")
 
 As of Tailwind 2.1 there's a new mode called "JIT" or "Just-in-Time" which features on demand compiling of your Tailwind CSS. This has a range of benefits, including;
 
