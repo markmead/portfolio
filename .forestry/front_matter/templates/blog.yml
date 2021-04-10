@@ -20,3 +20,5 @@ fields:
   label: Path
   config:
     required: true
+pages:
+- src/blogs/how-to-setup-tailwind-jit-in-rails-6-with-live-reload-2021.md
