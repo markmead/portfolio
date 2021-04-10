@@ -4,8 +4,14 @@
     text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis asperiores enim in, beatae pariatur minus tenetur fugiat. Optio, culpa! Saepe temporibus, nihil facilis aperiam earum facere ipsam. Illum, eos itaque?"
   >
     <div class="space-y-16">
-      <LinkGroup title="Blogs" :edges="$page.blogs.edges" />
-      <LinkGroup title="Projects" :edges="$page.projects.edges" />
+      <LinkGroup
+        title="Blogs"
+        :edges="$page.blogs.edges"
+      />
+      <LinkGroup
+        title="Projects"
+        :edges="$page.projects.edges"
+      />
     </div>
   </Layout>
 </template>

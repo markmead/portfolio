@@ -1,5 +1,8 @@
 <template>
-  <div class="prose max-w-none dark:prose-dark" v-html="content"></div>
+  <div
+    class="prose max-w-none dark:prose-dark"
+    v-html="content"
+  />
 </template>
 
 <script>

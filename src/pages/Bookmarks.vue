@@ -1,5 +1,5 @@
 <template>
-  <Layout title="Coming Soon"> </Layout>
+  <Layout title="Coming Soon" />
 </template>
 
 <script>

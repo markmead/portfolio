@@ -8,6 +8,9 @@
 import Tech from '@/components/Tech'
 
 export default {
+  components: {
+    Tech,
+  },
   data() {
     return {
       tech: [
@@ -26,9 +29,6 @@ export default {
         'Bootstrap',
       ],
     }
-  },
-  components: {
-    Tech,
   },
   metaInfo: {
     title: 'Uses',

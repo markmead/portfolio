@@ -4,7 +4,8 @@
   "scripts": {
     "build": "gridsome build",
     "explore": "gridsome explore",
-    "start": "gridsome develop"
+    "start": "gridsome develop",
+    "lint": "eslint 'src/**/*.{js,vue}'"
   },
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.2",
@@ -17,6 +18,8 @@
   "devDependencies": {
     "@fontsource/inter": "^4.2.2",
     "@tailwindcss/postcss7-compat": "npm:@tailwindcss/postcss7-compat",
+    "eslint": "^7.24.0",
+    "eslint-plugin-vue": "^7.8.0",
     "postcss": "^7",
     "sass-loader": "^10.1.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
