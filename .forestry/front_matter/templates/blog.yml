@@ -1,0 +1,13 @@
+---
+label: Blog
+hide_body: false
+fields:
+- type: text
+  name: description
+  label: description
+- type: text
+  name: path
+  label: path
+- type: text
+  name: title
+  label: title
