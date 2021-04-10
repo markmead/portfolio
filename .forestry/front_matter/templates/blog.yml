@@ -3,11 +3,19 @@ label: Blog
 hide_body: false
 fields:
 - type: text
+  name: title
+  label: Title
+  config:
+    required: true
+- type: text
   name: description
-  label: description
+  label: Description
+  config:
+    required: true
+    min: 100
+    max: 200
 - type: text
   name: path
-  label: path
-- type: text
-  name: title
-  label: title
+  label: Path
+  config:
+    required: true
