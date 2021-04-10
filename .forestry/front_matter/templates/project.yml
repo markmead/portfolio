@@ -1,0 +1,22 @@
+---
+label: Project
+hide_body: false
+fields:
+- type: text
+  name: brand
+  label: brand
+- type: textarea
+  name: description
+  label: description
+- type: text
+  name: path
+  label: path
+- type: list
+  name: tech
+  label: tech
+- type: text
+  name: title
+  label: title
+- type: text
+  name: website
+  label: website
