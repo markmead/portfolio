@@ -31,7 +31,7 @@ You need 3 Ruby gems to get this working; `guard`, `guard-livereload` and `rack-
 
 [Installation guide for guard](https://github.com/guard/guard#installation "guard installation guide")
 
-[Installation guide for guard-livereload](https://github.com/guard/guard#installation "guard-livereload installation guide")
+[Installation guide for guard-livereload]()
 
 Here is what I added to my Gemfile;
 
