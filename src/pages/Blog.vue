@@ -1,13 +1,31 @@
 <template>
-  <Layout title="Blogs"> </Layout>
+  <Layout title="Blogs">
+    <div class="space-y-16">
+      <LinkGroup :edges="$page.blogs.edges" />
+    </div>
+  </Layout>
 </template>
 
+<page-query>
+query {
+  blogs: allBlog {
+    edges {
+      node {
+        path
+        title
+        description
+      }
+    }
+  }
+}
+</page-query>
+
 <script>
-import CardLink from '@/components/CardLink'
+import LinkGroup from '@/components/LinkGroup'
 
 export default {
   components: {
-    CardLink,
+    LinkGroup,
   },
   metaInfo: {
     title: 'Development Blogs',

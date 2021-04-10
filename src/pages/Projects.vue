@@ -8,7 +8,7 @@
 
 <page-query>
 query {
-  projects: allProject(sort: [{ by: "featured" }, { by: "brand" }]) {
+  projects: allProject {
     edges {
       node {
         brand

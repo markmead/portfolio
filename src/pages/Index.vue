@@ -4,6 +4,7 @@
     text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis asperiores enim in, beatae pariatur minus tenetur fugiat. Optio, culpa! Saepe temporibus, nihil facilis aperiam earum facere ipsam. Illum, eos itaque?"
   >
     <div class="space-y-16">
+      <LinkGroup title="Blogs" :edges="$page.blogs.edges" />
       <LinkGroup title="Projects" :edges="$page.projects.edges" />
     </div>
   </Layout>
@@ -14,7 +15,15 @@ query {
   projects: allProject(limit: 3) {
     edges {
       node {
-        brand
+        description
+        path
+        title
+      }
+    }
+  }
+  blogs: allBlog(limit: 3) {
+    edges {
+      node {
         description
         path
         title

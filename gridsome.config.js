@@ -13,6 +13,14 @@ module.exports = {
       },
     },
     {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Blog',
+        path: './src/content/blogs/*.md',
+        route: '/blog/:path',
+      },
+    },
+    {
       use: 'gridsome-plugin-manifest',
       options: {
         background_color: '#1eebb3',
