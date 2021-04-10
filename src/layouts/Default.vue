@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white dark:bg-black">
-    <Header @action="handleTheme" />
+    <Header />
     <main role="main">
       <div class="max-w-3xl px-4 mx-auto">
         <Hero :title="title" :text="text" />
