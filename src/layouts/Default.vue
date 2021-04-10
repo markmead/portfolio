@@ -1,13 +1,15 @@
 <template>
-  <div>
-    <Header />
-    <main role="main">
-      <div class="max-w-3xl px-4 mx-auto">
-        <Hero :title="title" :text="text" />
-        <slot />
-      </div>
-    </main>
-    <Footer />
+  <div :class="themeClass">
+    <div class="bg-white dark:bg-black">
+      <Header @action="handleTheme" />
+      <main role="main">
+        <div class="max-w-3xl px-4 mx-auto">
+          <Hero :title="title" :text="text" />
+          <slot />
+        </div>
+      </main>
+      <Footer />
+    </div>
   </div>
 </template>
 
@@ -25,6 +27,24 @@ export default {
   props: {
     title: String,
     text: String,
+  },
+  data() {
+    return {
+      darkMode: false,
+    }
+  },
+  beforeMount() {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) this.darkMode = true
+  },
+  computed: {
+    themeClass() {
+      return this.darkMode ? 'dark' : 'light'
+    },
+  },
+  methods: {
+    handleTheme() {
+      this.darkMode = !this.darkMode
+    },
   },
 }
 </script>

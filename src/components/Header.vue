@@ -2,8 +2,8 @@
   <header>
     <div class="flex items-center justify-between max-w-3xl px-4 py-4 mx-auto">
       <button
-        class="inline-flex items-center justify-center w-10 h-10 text-gray-500 rounded-lg bg-gray-50 hover:text-gray-600 hover:bg-gray-100"
-        aria-label="Toggle dark mode"
+        class="inline-flex items-center justify-center w-10 h-10 text-gray-500 rounded-lg bg-gray-50 hover:text-gray-600 hover:bg-gray-100 dark:bg-gray-800 dark:hover:text-gray-400"
+        @click="fireAction"
       >
         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -25,6 +25,11 @@ import Navbar from '@/components/Navbar'
 export default {
   components: {
     Navbar,
+  },
+  methods: {
+    fireAction() {
+      this.$emit('action')
+    },
   },
 }
 </script>

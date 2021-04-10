@@ -18,9 +18,6 @@ module.exports = {
         typeName: 'Blog',
         path: './src/blogs/*.md',
         route: '/blog/:path',
-        remark: {
-          plugins: ['@gridsome/remark-prismjs'],
-        },
       },
     },
     {

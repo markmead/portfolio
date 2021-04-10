@@ -1,5 +1,10 @@
 <template>
-  <g-link class="px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-gray-600" :to="to">{{ text }}</g-link>
+  <g-link
+    class="px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-400"
+    :to="to"
+  >
+    {{ text }}
+  </g-link>
 </template>
 
 <script>
