@@ -3,20 +3,34 @@ label: Project
 hide_body: false
 fields:
 - type: text
+  name: title
+  label: Title
+  config:
+    required: true
+- type: text
   name: brand
-  label: brand
+  label: Brand
+  config:
+    required: true
 - type: textarea
   name: description
-  label: description
-- type: text
-  name: path
-  label: path
-- type: list
-  name: tech
-  label: tech
-- type: text
-  name: title
-  label: title
+  label: Description
+  config:
+    required: true
+    min: 100
+    max: 200
+- name: tech
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Tech
 - type: text
   name: website
-  label: website
+  label: Website
+- type: text
+  name: path
+  label: Path
+  config:
+    required: true
