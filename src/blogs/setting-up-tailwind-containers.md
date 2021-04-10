@@ -3,7 +3,7 @@ description: There's a lot of classes in Tailwind but the one you will be writin
   the most is container. Learn the best way of setting up this class to write better
   Tailwind code, faster.
 path: the-best-setup-for-the-container-class-in-tailwind
-title: The best setup for the container class in Tailwind [2021]
+title: The Best Setup for the `container` Class in Tailwind [2021]
 
 ---
 All CSS frameworks have the `.container` class, it's the most efficient way of setting a default `max-width` for your content.
