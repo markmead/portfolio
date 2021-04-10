@@ -1,7 +1,7 @@
 ---
-brand: Mercy Delta
-description: Iconic prints from an independent luxury brand, producing small sustainable collections that suit every woman, and can be worn year after year.
+title: Statement Prints from Day to Night
 path: mercy-delta
+description: Iconic prints from an independent luxury brand, producing small sustainable collections that suit every woman, and can be worn year after year.
 tech:
   [
     'Adobe XD',
@@ -16,7 +16,6 @@ tech:
     'Stripe',
     'Tailwind',
   ]
-title: Statement Prints from Day to Night
 website: https://www.mercydelta.com/
 ---
 

@@ -1,7 +1,7 @@
 ---
-brand: The Run Box
-description: The Run Box is a subscription box for runners, where every three months you recieve a collection of products built around your passion for running.
+title: The Best Subscription Box for Runners
 path: the-run-box
+description: The Run Box is a subscription box for runners, where every three months you recieve a collection of products built around your passion for running.
 tech:
   [
     'Adobe XD',
@@ -17,7 +17,6 @@ tech:
     'Stripe',
     'Tailwind',
   ]
-title: The Best Subscription Box for Runners
 website: https://www.therunbox.co.uk/
 ---
 
