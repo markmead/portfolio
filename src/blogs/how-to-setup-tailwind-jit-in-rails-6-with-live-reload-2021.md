@@ -19,6 +19,8 @@ As this is a setup guide, I won't talk about the benefits of Tailwind JIT mode b
 
 _I'm not saying this is the best way, but it's the way the only way I've found out how to do it so far._
 
+I'm going to assume you have Tailwind version 2.1 installed and you've updated your `tailwind.config.js` to include `mode: 'jit'`.
+
 **Step 1; Upgrading Webpacker**
 
 You need to be using Webpacker 6, thankfully Andrew Mason has already written up a collection of guides to help you do this;
