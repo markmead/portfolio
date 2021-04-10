@@ -17,3 +17,5 @@ There's an easy solution for this and it's all done through the `talwind.config.
 Here is a link to a Tailwind play environment where it shows off the best way to setup the `.container` class in Tailwind.
 
 [Tailwind play container class setup](https://play.tailwindcss.com/613aNBVMzD?layout=horizontal&size=2220x720&file=config "Tailwind play container class setup example")
+
+So there you have it, that's the best setup for the `.container` class in Tailwind.
