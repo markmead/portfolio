@@ -1,19 +1,16 @@
 <template>
-  <Layout :title="$page.project.title">
+  <Layout :title="$page.blog.title">
     <div class="space-y-16">
-      <Tech :tech="$page.project.tech" />
-      <Content :content="$page.project.content" />
+      <Content :content="$page.blog.content" />
     </div>
   </Layout>
 </template>
 
 <page-query>
-query Project($path: String!) {
-  project (path: $path) {
+query Blog($path: String!) {
+  blog (path: $path) {
     content
-    tech
     title
-    website
     description
   }
 }
@@ -21,23 +18,21 @@ query Project($path: String!) {
 
 <script>
 import Content from '@/components/Content'
-import Tech from '@/components/Tech'
 
 export default {
   metaInfo() {
     return {
-      title: this.$page.project.title,
+      title: this.$page.blog.title,
       meta: [
         {
           name: 'description',
-          content: this.$page.project.description,
+          content: this.$page.blog.description,
         },
       ],
     }
   },
   components: {
     Content,
-    Tech,
   },
 }
 </script>

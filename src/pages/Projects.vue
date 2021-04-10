@@ -11,7 +11,6 @@ query {
   projects: allProject {
     edges {
       node {
-        brand
         description
         path
         title

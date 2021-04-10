@@ -8,7 +8,7 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         typeName: 'Project',
-        path: './src/content/projects/*.md',
+        path: './src/projects/*.md',
         route: '/projects/:path',
       },
     },
@@ -16,27 +16,10 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         typeName: 'Blog',
-        path: './src/content/blogs/*.md',
+        path: './src/blogs/*.md',
         route: '/blog/:path',
-      },
-    },
-    {
-      use: 'gridsome-plugin-manifest',
-      options: {
-        background_color: '#1eebb3',
-        icon_path: './src/favicon.png',
-        name: 'Mark Mead Portfolio',
-        short_name: 'Mark Mead',
-        theme_color: '#000',
-        lang: 'en',
-      },
-    },
-    {
-      use: 'gridsome-plugin-service-worker',
-      options: {
-        networkFirst: {
-          cacheName: 'nf-v1',
-          routes: ['/', /\.(js|css|png)/],
+        remark: {
+          plugins: ['@gridsome/remark-prismjs'],
         },
       },
     },
