@@ -4,10 +4,7 @@
       <Header @action="handleTheme" />
       <main role="main">
         <div class="max-w-3xl px-4 mx-auto">
-          <Hero
-            :title="title"
-            :text="text"
-          />
+          <Hero :title="title" :text="text" />
           <slot />
         </div>
       </main>
@@ -42,7 +39,7 @@ export default {
     },
   },
   beforeMount() {
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) this.darkMode = true
+    this.darkMode = this.$isDarkMode()
   },
   methods: {
     handleTheme() {
