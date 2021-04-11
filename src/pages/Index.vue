@@ -1,17 +1,11 @@
 <template>
   <Layout
     title="Hey, I'm Mark"
-    text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis asperiores enim in, beatae pariatur minus tenetur fugiat. Optio, culpa! Saepe temporibus, nihil facilis aperiam earum facere ipsam. Illum, eos itaque?"
+    text="I build websites with Ruby on Rails, Vue and Shopify and I'm currently picking up Docker and Laravel. I'm currently the Senior Developer at Digital Reflow."
   >
     <div class="space-y-16">
-      <LinkGroup
-        title="Blogs"
-        :edges="$page.blogs.edges"
-      />
-      <LinkGroup
-        title="Projects"
-        :edges="$page.projects.edges"
-      />
+      <LinkGroup title="Blogs" :edges="$page.blogs.edges" />
+      <LinkGroup title="Projects" :edges="$page.projects.edges" />
     </div>
   </Layout>
 </template>

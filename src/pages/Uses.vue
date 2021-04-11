@@ -1,5 +1,5 @@
 <template>
-  <Layout title="Uses">
+  <Layout title="Uses (WIP)">
     <Tech :tech="tech" />
   </Layout>
 </template>
