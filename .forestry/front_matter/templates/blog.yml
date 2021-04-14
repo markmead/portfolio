@@ -21,4 +21,5 @@ fields:
   config:
     required: true
 pages:
+- src/blogs/how-to-create-a-material-design-floating-label-in-tailwind-2021.md
 - src/blogs/how-to-setup-tailwind-jit-in-rails-6-with-live-reload-2021.md
