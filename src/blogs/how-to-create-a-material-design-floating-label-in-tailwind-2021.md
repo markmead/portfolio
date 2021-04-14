@@ -9,7 +9,7 @@ path: how-to-create-a-material-design-floating-label-in-tailwind
 
 If you are unaware of a Material Design floating label you can take a look at an example on the Material Design website; [floating label on text input example](https://material-components.github.io/material-components-web-catalog/#/component/text-field "Material Design floating label example").
 
-For a label to be a floating label it needs to fulfil a set of criteria:
+For a label to be a floating label it needs to fulfill a set of criteria:
 
 * Be placed inside the input
 * Move away from the text when the input is focused
