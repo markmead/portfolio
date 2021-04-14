@@ -1,24 +1,18 @@
 ---
 title: Statement Prints from Day to Night
 path: mercy-delta
-description: Iconic prints from an independent luxury brand, producing small sustainable collections that suit every woman, and can be worn year after year.
+description: Iconic prints from an independent luxury brand, producing small sustainable
+  collections that suit every woman, and can be worn year after year.
 tech:
-  [
-    'Adobe XD',
-    'AWS',
-    'Heroku',
-    'Klarna',
-    'Postgres',
-    'Redis',
-    'Ruby on Rails',
-    'Solidus',
-    'Stimulus',
-    'Stripe',
-    'Tailwind',
-  ]
+- Shopify
+- Adobe XD
+- Klarna
+- Ruby on Rails
+- Stimulus
+- Tailwind
 website: https://www.mercydelta.com/
----
 
+---
 ## What is Mercy Delta?
 
 Mercy Delta are a luxury womenswear label, specialising in statement prints you can wear both day and night.
