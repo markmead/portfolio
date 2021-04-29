@@ -21,6 +21,7 @@ fields:
   config:
     required: true
 pages:
+- src/blogs/better-ways-to-write-apply-in-tailwind-2021.md
 - src/blogs/how-to-create-a-material-design-floating-label-in-tailwind-2021.md
 - src/blogs/how-to-setup-tailwind-jit-in-rails-6-with-live-reload-2021.md
 - src/blogs/using-alpinejs-with-hotwire-and-turbo-in-rails-2021.md
