@@ -7,11 +7,11 @@
     <NavbarLink to="/projects" text="Projects" />
 
     <a
-      href="https://marks.reviews/"
+      href="https://gumroad.com/markmead"
       target="_blank"
       class="inline-flex items-center px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-400"
     >
-      Reviews
+      Gumroad
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="ml-1.5 w-4 h-4"

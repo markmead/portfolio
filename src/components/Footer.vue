@@ -1,27 +1,35 @@
 <template>
   <footer class="mt-16 bg-white border-t border-gray-100 dark:bg-black dark:border-gray-800">
-    <div class="max-w-3xl px-4 py-8 mx-auto">
-      <nav class="flex flex-wrap justify-center -mx-5 -my-2">
-        <div class="px-5 py-2">
-          <g-link to="/uses" class="text-gray-500 hover:text-gray-900 dark:hover:text-gray-400">
-            /uses
-          </g-link>
-        </div>
+    <div class="max-w-3xl px-4 py-8 mx-auto space-y-8">
+      <div class="text-center">
+        <a class="gumroad-button" href="https://gumroad.com/l/IYLZb?wanted=true" target="_blank">
+          Buy Ruby on Rails Cheatsheet &amp; Code Snippets
+        </a>
+      </div>
 
-        <div class="px-5 py-2">
-          <g-link to="/snippets" class="text-gray-500 hover:text-gray-900 dark:hover:text-gray-400">
-            /snippets
-          </g-link>
-        </div>
+      <div class="flow-root">
+        <nav class="flex flex-wrap justify-center -mx-5 -my-2">
+          <div class="px-5 py-2">
+            <g-link to="/uses" class="text-gray-500 hover:text-gray-900 dark:hover:text-gray-400">
+              /uses
+            </g-link>
+          </div>
 
-        <div class="px-5 py-2">
-          <g-link to="/bookmarks" class="text-gray-500 hover:text-gray-900 dark:hover:text-gray-400">
-            /bookmarks
-          </g-link>
-        </div>
-      </nav>
+          <div class="px-5 py-2">
+            <g-link to="/snippets" class="text-gray-500 hover:text-gray-900 dark:hover:text-gray-400">
+              /snippets
+            </g-link>
+          </div>
 
-      <div class="flex justify-center mt-8 space-x-6">
+          <div class="px-5 py-2">
+            <g-link to="/bookmarks" class="text-gray-500 hover:text-gray-900 dark:hover:text-gray-400">
+              /bookmarks
+            </g-link>
+          </div>
+        </nav>
+      </div>
+
+      <div class="flex justify-center space-x-6">
         <a
           href="https://twitter.com/itsmarkmead"
           class="text-gray-400 hover:text-gray-500 dark:hover:text-gray-300"

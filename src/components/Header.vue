@@ -4,7 +4,6 @@
       <g-link to="/" class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-gray-50 dark:bg-gray-800">
         👋
       </g-link>
-
       <Navbar />
     </div>
   </header>
