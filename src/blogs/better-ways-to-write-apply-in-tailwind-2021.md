@@ -5,7 +5,7 @@ description: Learn how to write better Tailwind in a CSS file with `@apply` with
 path: better-ways-to-write-apply-in-tailwind
 
 ---
-When using Tailwind you might reach a point where you need to write Tailwind in a `CSS` file. 
+When using Tailwind you might reach a point where you need to write Tailwind in a CSS file.
 
 I typically reach this point when I have a component that is used in multiple places, ideally, you want to extract that component into its own file but that's not always the solution.
 
