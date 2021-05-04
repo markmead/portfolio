@@ -1,12 +1,6 @@
 <template>
   <footer class="mt-16 bg-white border-t border-gray-100 dark:bg-black dark:border-gray-800">
     <div class="max-w-3xl px-4 py-8 mx-auto space-y-8">
-      <div class="text-center">
-        <a class="gumroad-button" href="https://gum.co/IYLZb" target="_blank">
-          Buy The Ultimate Ruby on Rails Cheat Sheet
-        </a>
-      </div>
-
       <div class="flow-root">
         <nav class="flex flex-wrap justify-center -mx-5 -my-2">
           <div class="px-5 py-2">
