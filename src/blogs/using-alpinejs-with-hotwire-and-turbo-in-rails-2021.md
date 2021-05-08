@@ -5,13 +5,15 @@ description: The latest addition to Rails, Hotwire comes with a breaking change 
 path: using-alpinejs-with-hotwire-and-turbo-in-rails
 
 ---
+[**Love Ruby on Rails? Check out my collection of Ruby on Rails products on Gumroad**](https://gumroad.com/markmead "My personal Gumroad page")
+
 With the addition of [Hotwire](https://hotwire.dev/ "Hotwire Rails website") in Rails comes the change of Turbolinks to Turbo. The change to [Turbo](https://turbo.hotwire.dev/ "Turbo Rails website") doesn't break much with the exception of [AlpineJS](https://github.com/alpinejs/alpine "AlpineJS GitHub repository").
 
 If you don't know what AlpineJS is then I'd recommend taking a look at the GitHub repository, but in short;
 
 > Alpine.js offers you the reactive and declarative nature of big frameworks like Vue or React at a much lower cost.
 
-If you've been using AlpineJS or are planning on using it and you're about to upgrade to Hotwire then you'll need to install the NPM package `alpine-turbo-drive-adapter` by [SimoTod](https://github.com/SimoTod "SimoTod GitHub user"). 
+If you've been using AlpineJS or are planning on using it and you're about to upgrade to Hotwire then you'll need to install the NPM package `alpine-turbo-drive-adapter` by [SimoTod](https://github.com/SimoTod "SimoTod GitHub user").
 
 This package will fix AlpineJS's `x-show`, if it's not included all `x-show` elements will ignore the argument to make them `show`/`hide`.
 
