@@ -7,7 +7,7 @@ path: download-csv-current-params-ruby-on-rails
 ---
 Working with a CSV in Ruby on Rails is a problem free experience 99% of the time, but I hit that 1% when a client requested the functionality of exporting a CSV with options.
 
-The application had a concept of `users` and `subscriptions` where a user can be **subscribed**, **canceled,** or **inactive**. This was all powered by the Pay gem by Chris Oliver.
+The application had a concept of `users` and `subscriptions` where a user can be **subscribed**, **canceled,** or **inactive**. This was all powered by the [Pay gem](https://github.com/pay-rails/pay "GitHub repository for the Pay gem") by [Chris Oliver](https://twitter.com/excid3 "Twitter account for Chris Oliver from GoRails").
 
     class User < ApplicationRecord
       include ::Pay::Billable
