@@ -5,6 +5,8 @@ description: Exporting a CSV in Ruby on Rails is easy, but exporting a CSV with 
 path: download-csv-current-params-ruby-on-rails
 
 ---
+[**Love Ruby on Rails? Check out my collection of Ruby on Rails products on Gumroad**](https://gumroad.com/markmead "My personal Gumroad page")
+
 Working with a CSV in Ruby on Rails is a problem free experience 99% of the time, but I hit that 1% when a client requested the functionality of exporting a CSV with options.
 
 The application had a concept of `users` and `subscriptions` where a user can be **subscribed**, **canceled,** or **inactive**. This was all powered by the [Pay gem](https://github.com/pay-rails/pay "GitHub repository for the Pay gem") by [Chris Oliver](https://twitter.com/excid3 "Twitter account for Chris Oliver from GoRails").
@@ -44,9 +46,9 @@ In the application, they wanted to be able to filter and export a CSV based on t
 * You need to include `require 'csv'` at the top, above the `class`
 * I created a `status` method to display subscription status
 
-    def status
-      subscription&.status
-    end
+  def status
+  subscription&.status
+  end
 
 _This is very specific to the clients use case_
 
