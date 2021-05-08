@@ -17,13 +17,15 @@ In the application, they wanted to be able to filter and export a CSV based on t
 
 **Here's what I changed to get the functionality to work;**
 
-## Add scopes to the user model
+## Model
+
+**Add scopes to provide an easy way to look up `users` in the controller;**
 
     scope :subscribed, -> { left_outer_joins(:subscriptions).where("subscriptions.status = ?", "active") }
     scope :canceled, -> { left_outer_joins(:subscriptions).where("subscriptions.status = ?", "canceled") }
     scope :inactive, -> { where(processor: nil) }
 
-## Pass records into the `to_csv` method
+**Create a CSV based on records passed from the controller;**
 
     def self.to_csv(records = [])
       attributes = %w[email full_name status]
@@ -37,52 +39,60 @@ In the application, they wanted to be able to filter and export a CSV based on t
       end
     end
 
-I had to create a `status` method so it would show the **subscription status** in the CSV;
+**There's a few notes for the model;**
+
+* You need to include `require 'csv'` at the top, above the `class`
+* I created a `status` method to display subscription status
 
     def status
       subscription&.status
     end
 
-## Update the controller
+_This is very specific to the clients use case_
+
+## View
+
+**I added a simple Rails `form_with` that has a `select` and a `submit` input;**
+
+    = form_with(url: users_path, local: true, method: :get) do |f|
+      = f.select :status, [['Subscribed', 'subscribed'], ['Canceled', 'canceled'], ['Inactive', 'inactive']], { include_blank: 'Filter users by', selected: params[:status] }
+      = f.submit
+
+_In the application, the form is submitted when the `select` is changed_
+
+**Update the `link_to` that goes to the `index` action with the `csv` format to include the params;**
+
+    = link_to "Download CSV", users_path(request.params.merge(format: :csv))
+
+## Controller
+
+**We were using the `index` action and using `respond_to` to check for `html` and `csv` formats;**
 
     def index
-      @subscribers = User.order(created_at: :desc)
+      @users = User.order(created_at: :desc)
     
-      @subscribers = @subscribers.subscribed if params[:status] == 'subscribed'
-      @subscribers = @subscribers.canceled if params[:status] == 'canceled'
-      @subscribers = @subscribers.inactive if params[:status] == 'inactive'
+      @users = @users.subscribed if params[:status] == 'subscribed'
+      @users = @users.canceled if params[:status] == 'canceled'
+      @users = @users.inactive if params[:status] == 'inactive'
     
       csv_name = [(params[:status].present? ? params[:status] : 'all'), 'users', Date.today].compact.join('-')
     
       respond_to do |format|
         format.html
-        format.csv { send_data User.to_csv(@subscribers), filename: "#{csv_name}.csv" }
+        format.csv { send_data User.to_csv(@users), filename: "#{csv_name}.csv" }
       end
     end
 
-This includes a local variable called `csv_name` which allows for names like:
+Here we are using the `scopes` created in the model to filter `@users` based on the `params[:status]` value.
+
+I also included a `csv_name` variable which creates names such as;
 
 * `subscribed-users-2021-01-01.csv`
 * `canceled-users-2021-01-01.csv`
 * `inactive-users-2021-01-01.csv`
 
-## Add a form to pass params
+_This variable would be better as a method in the model to avoid cluttering the controller_
 
-    = form_with(url: users_path, local: true, method: :get) do |f|
-      = f.select :status, [['Subscribed', 'subscribed'], ['Canceled', 'canceled'], ['Inactive', 'inactive']], { include_blank: 'Filter users by', selected: params[:status] }
-      = f.submit
-    
-    = link_to "Download CSV", users_path(request.params.merge(format: :csv))
+**And that's it...**
 
-And that's it...
-
-The only change you really need to do is;
-
-**Update the controller to send a value to the `to_csv` method**
-
-    format.csv { send_data User.to_csv(@subscribers), filename: "#{csv_name}.csv" }
-
-**Loop over the data `to_csv` receives from the controller**
-
-    records.each do |user|
-    end
+This example is very specific to the application I was working on, but the logic can be used on any Ruby on Rails application.
