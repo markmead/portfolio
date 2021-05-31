@@ -25,5 +25,6 @@ pages:
 - src/blogs/how-to-add-conic-gradients-to-tailwind.md
 - src/blogs/how-to-create-a-material-design-floating-label-in-tailwind-2021.md
 - src/blogs/how-to-download-a-csv-with-current-params-in-ruby-on-rails-2021.md
+- src/blogs/how-to-schedule-vercel-deploys.md
 - src/blogs/how-to-setup-tailwind-jit-in-rails-6-with-live-reload-2021.md
 - src/blogs/using-alpinejs-with-hotwire-and-turbo-in-rails-2021.md
