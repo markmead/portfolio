@@ -1,5 +1,5 @@
 ---
-title: How to Schedule Vercel Deploys
+title: How to Schedule Vercel Deploys [2021]
 description: Setup scheduled deploys to Vercel in 5 minutes through deploy hooks,
   GitHub secrets and GitHub actions
 path: schedule-vercel-deploys
