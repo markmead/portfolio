@@ -1,7 +1,5 @@
 <template>
-  <h1 class="text-4xl font-bold dark:text-white">
-    {{ text }}
-  </h1>
+  <h1 class="text-4xl font-bold dark:text-white" v-text="text" />
 </template>
 
 <script>

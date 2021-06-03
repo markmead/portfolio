@@ -21,11 +21,9 @@ query {
 </page-query>
 
 <script>
-import LinkGroup from '@/components/LinkGroup'
-
 export default {
   components: {
-    LinkGroup,
+    LinkGroup: () => import('@/components/LinkGroup'),
   },
   metaInfo: {
     title: 'Projects',

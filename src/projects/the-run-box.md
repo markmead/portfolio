@@ -2,21 +2,6 @@
 title: The Best Subscription Box for Runners
 path: the-run-box
 description: The Run Box is a subscription box for runners, where every three months you recieve a collection of products built around your passion for running.
-tech:
-  [
-    'Adobe XD',
-    'Alpine',
-    'AWS',
-    'Devise',
-    'Heroku',
-    'Postgres',
-    'Redis',
-    'RSpec',
-    'Ruby on Rails',
-    'Spina',
-    'Stripe',
-    'Tailwind',
-  ]
 website: https://www.therunbox.co.uk/
 ---
 

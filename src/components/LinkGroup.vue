@@ -1,9 +1,6 @@
 <template>
   <section>
-    <h2
-      v-if="title"
-      class="mb-6 text-2xl font-bold dark:text-white"
-    >
+    <h2 v-if="title" class="mb-6 text-2xl font-bold dark:text-white">
       {{ title }}
     </h2>
 
@@ -22,10 +19,10 @@
 </template>
 
 <script>
-import CardLink from '@/components/CardLink'
-
 export default {
-  components: { CardLink },
+  components: {
+    CardLink: () => import('@/components/CardLink'),
+  },
   props: {
     edges: Array,
     title: String,

@@ -1,9 +1,6 @@
 <template>
   <Layout :title="$page.project.title">
-    <div class="space-y-16">
-      <Tech :tech="$page.project.tech" />
-      <Content :content="$page.project.content" />
-    </div>
+    <Content :content="$page.project.content" />
   </Layout>
 </template>
 
@@ -11,7 +8,6 @@
 query Project($path: String!) {
   project (path: $path) {
     content
-    tech
     title
     website
     description
@@ -20,10 +16,10 @@ query Project($path: String!) {
 </page-query>
 
 <script>
-import Content from '@/components/Content'
-import Tech from '@/components/Tech'
-
 export default {
+  components: {
+    Content: () => import('@/components/Content'),
+  },
   metaInfo() {
     return {
       title: this.$page.project.title,
@@ -34,10 +30,6 @@ export default {
         },
       ],
     }
-  },
-  components: {
-    Content,
-    Tech,
   },
 }
 </script>

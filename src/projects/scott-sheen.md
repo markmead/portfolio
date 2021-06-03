@@ -2,7 +2,6 @@
 title: Leading Estate Agency in the Tendring Area
 path: scott-sheen
 description: A family run, independent Estate Agent with over forty years’ experience within the industry. Scott Sheen & Partners specialise in all aspects of Sale and Letting of Residential property locally in North Essex.
-tech: ['Adobe XD', 'Alpine', 'Alto', 'AWS', 'Heroku', 'Postgres', 'Ruby on Rails', 'Spina', 'Stimulus', 'Tailwind']
 website: https://www.scottsheenandpartners.co.uk/
 ---
 

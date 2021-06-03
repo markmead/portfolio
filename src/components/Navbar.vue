@@ -31,11 +31,9 @@
 </template>
 
 <script>
-import NavbarLink from '@/components/NavbarLink'
-
 export default {
   components: {
-    NavbarLink,
+    NavbarLink: () => import('@/components/NavbarLink'),
   },
 }
 </script>

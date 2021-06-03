@@ -2,7 +2,6 @@
 title: The Ultimate Personalised Gift for Sports Fans
 path: sportify
 description: Add your photo, name and choose your stats. Hundreds of designs to choose from.
-tech: ['Adobe XD', 'Alpine', 'Shopify', 'Tailwind']
 website: https://sportifycards.com/
 ---
 

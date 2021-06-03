@@ -1,8 +1,6 @@
 <template>
   <Layout :title="$page.blog.title">
-    <div class="space-y-16">
-      <Content :content="$page.blog.content" />
-    </div>
+    <Content :content="$page.blog.content" />
   </Layout>
 </template>
 
@@ -17,9 +15,10 @@ query Blog($path: String!) {
 </page-query>
 
 <script>
-import Content from '@/components/Content'
-
 export default {
+  components: {
+    Content: () => import('@/components/Content'),
+  },
   metaInfo() {
     return {
       title: this.$page.blog.title,
@@ -30,9 +29,6 @@ export default {
         },
       ],
     }
-  },
-  components: {
-    Content,
   },
 }
 </script>
