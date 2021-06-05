@@ -3,23 +3,30 @@ label: Project
 hide_body: false
 display_field: title
 fields:
-  - type: text
-    name: title
-    label: Title
-    config:
-      required: true
-  - type: textarea
-    name: description
-    label: Description
-    config:
-      required: true
-      min: 100
-      max: 200
-  - type: text
-    name: website
-    label: Website
-  - type: text
-    name: path
-    label: Path
-    config:
-      required: true
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+- type: textarea
+  name: description
+  label: Description
+  config:
+    required: true
+    min: 100
+    max: 200
+- name: tech
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Tech
+- type: text
+  name: website
+  label: Website
+- type: text
+  name: path
+  label: Path
+  config:
+    required: true

@@ -28,3 +28,4 @@ pages:
 - src/blogs/how-to-schedule-vercel-deploys.md
 - src/blogs/how-to-setup-tailwind-jit-in-rails-6-with-live-reload-2021.md
 - src/blogs/using-alpinejs-with-hotwire-and-turbo-in-rails-2021.md
+- src/blogs/writing-react-vue-like-components-with-html.md
