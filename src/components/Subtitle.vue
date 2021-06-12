@@ -1,5 +1,8 @@
 <template>
-  <p class="mt-4 text-xl text-gray-500 dark:text-gray-400" v-text="text" />
+  <p
+    class="mt-4 text-xl text-gray-500 dark:text-gray-400"
+    v-text="text"
+  />
 </template>
 
 <script>

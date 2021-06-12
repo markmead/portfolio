@@ -1,14 +1,29 @@
 <template>
-  <nav role="navigation" class="flex items-center space-x-2 text-sm font-medium text-gray-500">
+  <nav
+    role="navigation"
+    class="flex items-center space-x-2 text-sm font-medium text-gray-500"
+  >
     <span class="hidden lg:block">
-      <NavbarLink to="/" text="Home" />
+      <NavbarLink
+        to="/"
+        text="Home"
+      />
     </span>
-    <NavbarLink to="/blog" text="Blog" />
-    <NavbarLink to="/projects" text="Projects" />
+
+    <NavbarLink
+      to="/blog"
+      text="Blog"
+    />
+
+    <NavbarLink
+      to="/projects"
+      text="Projects"
+    />
 
     <a
       href="https://gumroad.com/markmead"
       target="_blank"
+      rel="noreferrer"
       class="inline-flex items-center px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-400"
     >
       Gumroad

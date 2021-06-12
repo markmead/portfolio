@@ -2,7 +2,10 @@
   <header role="banner">
     <div class="py-16">
       <Title :text="title" />
-      <Subtitle v-if="text" :text="text" />
+      <Subtitle
+        v-if="text"
+        :text="text"
+      />
     </div>
   </header>
 </template>

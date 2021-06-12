@@ -1,7 +1,14 @@
+/* eslint-disable */
+
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  purge: ['./src/**/*.vue', './src/content/**/*.md'],
+  purge: {
+    content: ['./src/**/*.vue', './src/content/**/*.md'],
+    options: {
+      keyframes: true,
+    },
+  },
   darkMode: 'media',
   theme: {
     extend: {
