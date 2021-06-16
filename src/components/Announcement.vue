@@ -18,8 +18,8 @@
 export default {
   data() {
     return {
-      count: '100+',
-      price: '$10',
+      count: '150+',
+      price: '$15',
     }
   },
   mounted() {

@@ -4,18 +4,18 @@
     class="flex items-center space-x-2 text-sm font-medium text-gray-500"
   >
     <span class="hidden lg:block">
-      <NavbarLink
+      <LinkNavbar
         to="/"
         text="Home"
       />
     </span>
 
-    <NavbarLink
+    <LinkNavbar
       to="/blog"
       text="Blog"
     />
 
-    <NavbarLink
+    <LinkNavbar
       to="/projects"
       text="Projects"
     />
@@ -46,9 +46,11 @@
 </template>
 
 <script>
+import LinkNavbar from '@/components/LinkNavbar'
+
 export default {
   components: {
-    NavbarLink: () => import('@/components/NavbarLink'),
+    LinkNavbar
   },
 }
 </script>

@@ -8,7 +8,7 @@
 
     <div class="flow-root">
       <div class="-my-5 divide-y divide-gray-100 dark:divide-gray-800">
-        <CardLink
+        <LinkCard
           v-for="edge in edges"
           :key="edge.node.title"
           :text="edge.node.description"
@@ -21,9 +21,11 @@
 </template>
 
 <script>
+import LinkCard from '@/components/LinkCard'
+
 export default {
   components: {
-    CardLink: () => import('@/components/CardLink'),
+    LinkCard
   },
   props: {
     edges: Array,

@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 module.exports = {
   siteName: 'Mark Mead',
   siteUrl: 'https://mead.im',

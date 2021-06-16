@@ -16,12 +16,17 @@
 </template>
 
 <script>
+import Announcement from '@/components/Announcement'
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
+import Hero from '@/components/Hero'
+
 export default {
   components: {
-    Announcement: () => import('@/components/Announcement'),
-    Footer: () => import('@/components/Footer'),
-    Header: () => import('@/components/Header'),
-    Hero: () => import('@/components/Hero'),
+    Announcement,
+    Footer,
+    Header,
+    Hero,
   },
   props: {
     title: String,

@@ -11,10 +11,13 @@
 </template>
 
 <script>
+import Title from '@/components/Title'
+import Subtitle from '@/components/Subtitle'
+
 export default {
   components: {
-    Title: () => import('@/components/Title'),
-    Subtitle: () => import('@/components/Subtitle'),
+    Title,
+    Subtitle,
   },
   props: {
     title: String,
