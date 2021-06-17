@@ -1,7 +1,7 @@
 ---
 title: Create a Popout Shadow Effect with the New Tailwind CSS v2.2 Update
 description: To create a popout shadow effect in in the past with Tailwind CSS you'd
-  need additional elements, but not anymore with Tailwind v2.2.
+  need additional elements, but not anymore with Tailwind CSS v2.2.
 path: popout-shadow-effect-with-tailwind-2-2
 
 ---
@@ -11,7 +11,7 @@ So popular, I even use it as the featured button component on [HyperUI: Componen
 
 But to create this in Tailwind CSS required additional HTML elements inside which made your HTML cluttered.
 
-**This is fixed in Tailwind v2.2.**
+**This is fixed in Tailwind CSS v2.2.**
 
 Here's an example of the old way:
 
@@ -48,4 +48,4 @@ As for the slight offset... Here's a replica of the example but in CodePen writt
 
 [CodePen Example with SCSS](https://codepen.io/markmead/pen/gOmErLy "Example of the code in this blog but without Tailwind")
 
-If you compare the old Tailwind way, the new Tailwind v2.2 way and the CodePen SCSS example, you will see the new Tailwind v2.2 way and the CodePen SCSS example match. Whereas the old Tailwind way is slightly offset... Odd.
+If you compare the old Tailwind CSS way, the new Tailwind CSS v2.2 way and the CodePen SCSS example, you will see the new Tailwind CSS v2.2 way and the CodePen SCSS example match. Whereas the old Tailwind CSS way is slightly offset... Odd.
