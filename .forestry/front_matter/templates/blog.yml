@@ -22,6 +22,7 @@ fields:
     required: true
 pages:
 - src/blogs/better-ways-to-write-apply-in-tailwind-2021.md
+- src/blogs/create-a-popout-shadow-effect-with-the-new-tailwind-css-v2.2-update.md
 - src/blogs/how-to-add-conic-gradients-to-tailwind.md
 - src/blogs/how-to-create-a-material-design-floating-label-in-tailwind-2021.md
 - src/blogs/how-to-darken-a-background-image-with-the-new-tailwind-v2.2-update.md
