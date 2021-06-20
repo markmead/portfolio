@@ -12,7 +12,9 @@ Here's a Tailwind Play example showcasing off the new way:
 
 [Tailwind Play Example for Tailwind v2.2](https://play.tailwindcss.com/tKldzVn3U1 "Tailwind Play example of material floating label for Tailwind v2.2")
 
-Before Tailwind CSS v2.2 the following was how to do it
+***
+
+**Before Tailwind CSS v2.2 the following was how to do it:**
 
 [Jump straight to the Tailwind Play example](https://play.tailwindcss.com/3unp9RIMe4?file=config "Tailwind Play example of a Material Design floating label in Tailwind")
 
