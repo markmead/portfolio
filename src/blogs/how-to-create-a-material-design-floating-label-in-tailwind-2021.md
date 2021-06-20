@@ -1,11 +1,20 @@
 ---
-title: How to Create a Material Design Floating Label in Tailwind [2021]
+title: How to Create a Material Design Floating Label in Tailwind [Updated for Tailwind
+  v2.2] [2021]
 description: Learn how to create the famous floating label effect found in Material
   Design by Google in Tailwind.
 path: how-to-create-a-material-design-floating-label-in-tailwind
 
 ---
-[**Jump straight to the Tailwind Play example**](https://play.tailwindcss.com/3unp9RIMe4?file=config "Tailwind Play example of a Material Design floating label in Tailwind")
+Since Tailwind CSS v2.2 there's a way to do this with JUST Tailwind, this is thanks to the addition of `placeholder-shown` and the new `peer` sibling selector class.
+
+Here's a Tailwind Play example showcasing off the new way:
+
+[Tailwind Play Example for Tailwind v2.2](https://play.tailwindcss.com/tKldzVn3U1 "Tailwind Play example of material floating label for Tailwind v2.2")
+
+Before Tailwind CSS v2.2 the following was how to do it
+
+[Jump straight to the Tailwind Play example](https://play.tailwindcss.com/3unp9RIMe4?file=config "Tailwind Play example of a Material Design floating label in Tailwind")
 
 If you are unaware of a Material Design floating label you can take a look at an example on the Material Design website; [floating label on text input example](https://material-components.github.io/material-components-web-catalog/#/component/text-field "Material Design floating label example").
 
