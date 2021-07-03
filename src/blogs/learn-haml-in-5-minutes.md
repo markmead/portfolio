@@ -1,5 +1,5 @@
 ---
-title: Learn HAML in 5 Minutes
+title: Learn HAML in 5 Minutes [2021]
 description: HAML is a template engine for Ruby on Rails that allows you to write
   fast, easy to read, beautiful markup.
 path: learn-haml-in-5-minutes
