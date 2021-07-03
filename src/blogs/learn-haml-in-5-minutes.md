@@ -51,46 +51,37 @@ You can install [haml-rails](https://rubygems.org/gems/haml-rails) by running `b
 
 ### HTML Tags in HAML
 
-    / <div>
+    / <div> tag
     %div
     
-    / <div class="text">
+    / <div> tag with a class
     .test
     
-    / <section class="test" id="test">
+    / <section> tag with an id and a class
     %section.test#test
     
-    / <a href="/" target="_blank" data-turbo="false">
+    / <a> tag with HTML attributes
     %a(href="/" target="_blank" data-turbo="false")
     
     You can also write it in a hash:
     
     %a{ href: "/", target: "_blank", data: { turbo: false } }
     
-    / <h1>Hello World</h1>
+    / <h1> tag with single line of content
     %h1 Hello World
     
-    /
-      <p>
-    	Hello world, how are you today? I'm doing just fine,
-        especially when I'm writing HAML
-      </p>
+    / <p> tag with multi line of content
     %p
       Hello world, how are you today? I'm doing just fine,
       especially when I'm writing HAML.
       
-    /
-      <h1>
-        Hello
-        <br />
-        World
-      </h1>
+    / <h1> tag with <br> inside it
     %h1
       Hello
       %br/
       World
       
-    / <h1>Hello - World</h1>
+    / <h1> tag with a non-HTML element inside it
     %h1
       Hello
       \-
