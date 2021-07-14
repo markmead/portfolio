@@ -1,34 +1,32 @@
 ---
 title: How to Add Radial Gradients to Tailwind [2021]
-description: Currently, you cannot user conic gradients in Tailwind but that all changes
+description: Currently, you cannot use radial gradients in Tailwind but that all changes
   with a few lines of code in the config.
-path: add-conic-gradients-tailwind
+path: add-radial-gradients-tailwind
 
 ---
-## What is a conic gradient?
+Currently, you cannot add radial gradients to Tailwind and it's not something they are looking to add anytime soon.
 
-> conic-gradient() CSS function creates an image consisting of a gradient with color transitions rotated around a center point
-
-So how do I add that to Tailwind? 
+So how do you add radial gradients to Tailwind?
 
 It's very simple...
 
 And the following to your `tailwind.config.js` file:
 
     backgroundImage: {
-      'gradient-conic': 'conic-gradient(var(--tw-gradient-stops))',
-      'gradient-conic-t': 'conic-gradient(at top, var(--tw-gradient-stops))',
-      'gradient-conic-r': 'conic-gradient(at right, var(--tw-gradient-stops))',
-      'gradient-conic-b': 'conic-gradient(at bottom, var(--tw-gradient-stops))',
-      'gradient-conic-l': 'conic-gradient(at left, var(--tw-gradient-stops))',
-      'gradient-conic-tr': 'conic-gradient(at top right, var(--tw-gradient-stops))',
-      'gradient-conic-tl': 'conic-gradient(at top left, var(--tw-gradient-stops))',
-      'gradient-conic-br': 'conic-gradient(at bottom right, var(--tw-gradient-stops))',
-      'gradient-conic-bl': 'conic-gradient(at bottom left, var(--tw-gradient-stops))',
+      'gradient-radial': 'radial-gradient(ellipse at center, var(--tw-gradient-stops))',
+      'gradient-radial-at-t': 'radial-gradient(ellipse at top, var(--tw-gradient-stops))',
+      'gradient-radial-at-b': 'radial-gradient(ellipse at bottom, var(--tw-gradient-stops))',
+      'gradient-radial-ata-l': 'radial-gradient(ellipse at left, var(--tw-gradient-stops))',
+      'gradient-radial-at-r': 'radial-gradient(ellipse at right, var(--tw-gradient-stops))',
+      'gradient-radial-at-tl': 'radial-gradient(ellipse at top left, var(--tw-gradient-stops))',
+      'gradient-radial-at-tr': 'radial-gradient(ellipse at top right, var(--tw-gradient-stops))',
+      'gradient-radial-at-bl': 'radial-gradient(ellipse at bottom left, var(--tw-gradient-stops))',
+      'gradient-radial-at-br': 'radial-gradient(ellipse at bottom right, var(--tw-gradient-stops))',
     },
 
 And that's it...
 
-Now you can reference classes like `bg-gradient-conic-bl from-fuchsia-300 via-green-400 to-rose-700`
+Now you can reference classes like `bg-gradient-radial-at-l from-fuchsia-300 via-green-400 to-rose-700`
 
 It can be seen in action on [Hypercolor](https://hypercolor.dev/ "Hypercolor website")
