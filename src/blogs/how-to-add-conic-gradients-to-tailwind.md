@@ -1,5 +1,5 @@
 ---
-title: How to Add Conic Gradients to Tailwind
+title: How to Add Conic Gradients to Tailwind [2021]
 description: Currently, you cannot user conic gradients in Tailwind but that all changes
   with a few lines of code in the config.
 path: add-conic-gradients-tailwind
